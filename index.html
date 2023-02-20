@@ -1,51 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Form</title>
 </head>
 
-<body background="">
+<body>
     <script src="js\script.js"></script>
-    <style>
-        body {
-            background-color: powderblue;
-        }
-    </style>
 
-    <h1>Resume</h1>
-
-    <img src="img/Andrii.jpg" alt="#" width="320" height="426">
-
-    <div>
-        <ul>
-            <li>Date of birth: 26.09.2004</li>
-            <li>Name: Andriy</li>
-            <li>Surname: Smolinkyi</li>
-            <li>Phone: +380989058658</li>
-            <li>Email: awful.braid@gmail.com</li>
-        </ul>
-    </div>
-
-    <hr>
-    <h2>Experience</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem assumenda eos adipisci pariatur eius, vitae
-        accusamus magni earum,
-        tempore iste eligendi sequi ratione voluptates similique molestiae. Consectetur hic iusto repellat.
-    </p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem assumenda eos adipisci pariatur eius, vitae
-        accusamus magni earum,
-        tempore iste eligendi sequi ratione voluptates similique molestiae. Consectetur hic iusto repellat.
-    </p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem assumenda eos adipisci pariatur eius, vitae
-        accusamus magni earum,
-        tempore iste eligendi sequi ratione voluptates similique molestiae. Consectetur hic iusto repellat.
-    </p>
-
+    <fieldset>
+        <table>
+            <form action="#">
+                <tr>
+                    <td><label for="username">Повне імя</label></td>
+                    <td><input type="text" name="username" id="username" maxlength="30"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" name="email" id="email" maxlength="30"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Пароль</label></td>
+                    <td><input type="password" name="password" id="password" maxlength="30"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Пароль ще раз</label></td>
+                    <td><input type="password" name="password" id="password" maxlength="30"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <Legend>Стать</Legend>
+                    </td>
+                    <td>
+                        <label for="male"><input type="radio" id="male" name="sex" value="male">чоловіча</label>
+                        <label for="female"><input type="radio" id="female" name="sex" value="female">жіноча</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="age">Вік</label></td>
+                    <td><input type="number" id="age" min="0" max="120" minlength="1" maxlength="3"></td>
+                </tr>
+                <tr>
+                    <td><label for="course">Курс</label></td>
+                    <td>
+                        <select name="course" id="course">
+                            <option value="">-=Виберіть курс=-</option>
+                            <option value="Front-End">Front-End</option>
+                            <option value="Back-End">Back-End</option>
+                            <option value="Project Management">Project Management</option>
+                            <option value="QA Manual">QA Manual</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="adress">Повна адреса</label></td>
+                    <td>
+                        <textarea name="adress" id="adress" cols="20" rows="3"
+                            placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="agreed">
+                            <label for="agree"><input type="checkbox" name="agree" id="agree">Я погоджуюсь з обробкою
+                                персональних даних</label>
+                        </div>
+                    </td>
+                </tr>
+        </table>
+        <button type="reset">Очистити форму</button>
+        <button type="register">Зареєструватися</button>
+    </fieldset>
 
 </body>
 
