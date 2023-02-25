@@ -117,14 +117,10 @@
    font-weight: 400;
    font-size: 18px;
    line-height: 25px;
-   /* identical to box height */
 
    letter-spacing: 0.02em;
 
    color: #828282;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 4;
@@ -139,8 +135,6 @@ hr {
    bottom: 0px;
 
    border: 1px solid #828282;
-
-   /* Inside auto layout */
 
    flex: none;
    order: 1;
@@ -173,8 +167,6 @@ hr {
    font-size: 48px;
    line-height: 65px;
 
-   /* Black */
-
    color: #070707;
 }
 
@@ -197,8 +189,6 @@ hr {
    left: 235px;
    top: 589px;
 
-   /* bg-gray */
-
    background: #F6F6F6;
 }
 
@@ -213,12 +203,7 @@ hr {
    line-height: 46px;
    text-align: center;
 
-   /* Black */
-
    color: #070707;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 1;
@@ -237,9 +222,6 @@ hr {
    width: 480px;
    height: 210px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 2;
    flex-grow: 0;
@@ -257,12 +239,8 @@ hr {
    line-height: 25px;
    text-align: center;
 
-   /* Black */
 
    color: #070707;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 0;
@@ -280,12 +258,7 @@ hr {
    line-height: 25px;
    text-align: center;
 
-   /* Black */
-
    color: #070707;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 1;
@@ -303,12 +276,7 @@ hr {
    line-height: 25px;
    text-align: center;
 
-   /* Black */
-
    color: #070707;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 2;
@@ -343,9 +311,6 @@ hr {
    width: 250px;
    height: 84px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 0;
    flex-grow: 0;
@@ -362,12 +327,7 @@ hr {
    line-height: 46px;
    text-align: center;
 
-   /* Black */
-
    color: #070707;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 0;
@@ -385,12 +345,7 @@ hr {
    line-height: 25px;
    text-align: center;
 
-   /* Black */
-
    color: #070707;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 1;
@@ -408,9 +363,6 @@ hr {
    width: 970px;
    height: 230px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 1;
    flex-grow: 0;
@@ -425,9 +377,6 @@ hr {
 
    width: 170px;
    height: 230px;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 0;
@@ -444,9 +393,6 @@ hr {
    width: 80px;
    height: 143px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 0;
    flex-grow: 0;
@@ -455,9 +401,6 @@ hr {
 .icon-Ps {
    width: 80px;
    height: 80px;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 0;
@@ -476,12 +419,7 @@ hr {
    text-align: center;
    letter-spacing: 0.02em;
 
-   /* text */
-
    color: #828282;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 1;
@@ -498,9 +436,6 @@ hr {
    width: 170px;
    height: 26px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 1;
    flex-grow: 0;
@@ -515,9 +450,6 @@ hr {
 
    width: 170px;
    height: 230px;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 1;
@@ -535,9 +467,6 @@ hr {
    width: 80px;
    height: 143px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 0;
    flex-grow: 0;
@@ -546,9 +475,6 @@ hr {
 .icon-Ai {
    width: 80px;
    height: 80px;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 0;
@@ -567,12 +493,7 @@ hr {
    text-align: center;
    letter-spacing: 0.02em;
 
-   /* text */
-
    color: #828282;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 1;
@@ -589,9 +510,6 @@ hr {
    width: 170px;
    height: 26px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 1;
    flex-grow: 0;
@@ -606,9 +524,6 @@ hr {
 
    width: 170px;
    height: 230px;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 2;
@@ -625,9 +540,6 @@ hr {
    width: 90px;
    height: 143px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 0;
    flex-grow: 0;
@@ -636,9 +548,6 @@ hr {
 .icon-Af {
    width: 80px;
    height: 80px;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 0;
@@ -654,12 +563,7 @@ hr {
    text-align: center;
    letter-spacing: 0.02em;
 
-   /* text */
-
    color: #828282;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 1;
@@ -676,9 +580,6 @@ hr {
    width: 170px;
    height: 26px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 1;
    flex-grow: 0;
@@ -693,9 +594,6 @@ hr {
 
    width: 170px;
    height: 230px;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 3;
@@ -712,9 +610,6 @@ hr {
    width: 53.33px;
    height: 124px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 0;
    flex-grow: 0;
@@ -723,9 +618,6 @@ hr {
 .icon-Figma {
    width: 53.33px;
    height: 80px;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 0;
@@ -741,17 +633,11 @@ hr {
    font-weight: 700;
    font-size: 14px;
    line-height: 19px;
-   /* identical to box height */
 
    text-align: center;
    letter-spacing: 0.02em;
 
-   /* text */
-
    color: #828282;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 1;
@@ -767,9 +653,6 @@ hr {
 
    width: 170px;
    height: 26px;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 1;
@@ -792,8 +675,6 @@ hr {
    left: 235px;
    top: 1653px;
 
-   /* bg-gray */
-
    background: #F6F6F6;
 }
 
@@ -811,13 +692,7 @@ hr {
    font-size: 34px;
    line-height: 46px;
    text-align: center;
-
-   /* Black */
-
    color: #070707;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 1;
@@ -835,9 +710,6 @@ hr {
    width: 970px;
    height: 1978px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 2;
    flex-grow: 0;
@@ -854,9 +726,6 @@ hr {
    width: 970px;
    height: 630px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 0;
    flex-grow: 0;
@@ -865,8 +734,6 @@ hr {
 .Fashion-store-img {
    width: 970px;
    height: 540px;
-
-   /* Inside auto layout */
 
    flex: none;
    order: 0;
@@ -885,12 +752,7 @@ hr {
    text-align: center;
    text-decoration-line: underline;
 
-   /* Black */
-
    color: #070707;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 1;
@@ -907,9 +769,6 @@ hr {
    width: 970px;
    height: 604px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 1;
    flex-grow: 0;
@@ -918,8 +777,6 @@ hr {
 .Reebok-store-img {
    width: 970px;
    height: 540px;
-
-   /* Inside auto layout */
 
    flex: none;
    order: 0;
@@ -936,9 +793,6 @@ hr {
    width: 970px;
    height: 604px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 2;
    flex-grow: 0;
@@ -947,8 +801,6 @@ hr {
 .Braun-Landing-Page-img {
    width: 970px;
    height: 540px;
-
-   /* Inside auto layout */
 
    flex: none;
    order: 0;
@@ -964,12 +816,7 @@ hr {
    text-align: center;
    text-decoration-line: underline;
 
-   /* Black */
-
    color: #070707;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 1;
@@ -1001,9 +848,6 @@ hr {
    width: 280px;
    height: 106px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 0;
    flex-grow: 0;
@@ -1020,12 +864,7 @@ hr {
    line-height: 46px;
    text-align: center;
 
-   /* Black */
-
    color: #070707;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 0;
@@ -1043,12 +882,7 @@ hr {
    line-height: 25px;
    text-align: center;
 
-   /* Black */
-
    color: #070707;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 1;
@@ -1065,9 +899,6 @@ hr {
    width: 310px;
    height: 114px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 1;
    flex-grow: 0;
@@ -1083,12 +914,8 @@ hr {
    width: 180px;
    height: 44px;
 
-   /* Black */
-
    background: #070707;
    border-radius: 22px;
-
-   /* Inside auto layout */
 
    flex: none;
    order: 0;
@@ -1109,9 +936,6 @@ hr {
 
    color: #FFFFFF;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 0;
    flex-grow: 0;
@@ -1127,9 +951,6 @@ hr {
    width: 310px;
    height: 40px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 1;
    flex-grow: 0;
@@ -1138,9 +959,6 @@ hr {
 .linkedin {
    width: 40px;
    height: 40px;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 0;
@@ -1151,9 +969,6 @@ hr {
    width: 40px;
    height: 40px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 1;
    flex-grow: 0;
@@ -1163,9 +978,6 @@ hr {
    width: 40px;
    height: 40px;
 
-
-   /* Inside auto layout */
-
    flex: none;
    order: 2;
    flex-grow: 0;
@@ -1174,9 +986,6 @@ hr {
 .dribbble {
    width: 40px;
    height: 40px;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 3;
@@ -1195,9 +1004,6 @@ hr {
    text-align: center;
 
    color: #828282;
-
-
-   /* Inside auto layout */
 
    flex: none;
    order: 2;
