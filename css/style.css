@@ -1,24 +1,112 @@
-body {
+* {
    box-sizing: border-box;
-   position: relative;
-   width: 1440px;
-   height: 900px;
+}
+
+body {
    background-color: #3399CC;
    border: 25px solid #2B81AC;
+   color: white;
    font-family: 'Lucida Sans Unicode';
    font-size: 22px;
    line-height: 26px;
-   color: #FFFFFF;
 }
 
+.header {
+   width: 80%;
+   margin-top: 25px;
+   margin-left: 78px;
+}
 
 .table {
-   display: inline-block;
    width: 80%;
-   height: 65%;
-   border: 2px solid #FFFFFF;
+   height: 60%;
+   font-size: 0px;
    position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+   margin: auto;
+}
+
+.table li {
+   display: inline-block;
+   border: 2px solid white;
+   text-align: center;
+   padding-top: 10px;
+   font-size: 22px;
+   height: 25%;
+   box-sizing: border-box;
+}
+
+.Paris,
+.Belgrade,
+.Venice,
+.Tel-Avive,
+.Cair,
+.New-York,
+.New-Delhi,
+.Tokyo {
+   width: 25%;
+}
+
+.Lisbon,
+.San-Francisco {
+   width: 50%;
+}
+
+.Sydney {
+   width: 100%;
+}
+
+footer {
+   width: 80%;
+   display: inline-block;
+   margin-top: 330px;
+   margin-left: 78px;
+}
+
+.Lisbon {
+   background-color: #66b2ff;
+}
+
+.Paris {
+   background-color: #33CCCC;
+}
+
+.Belgrade {
+   background-color: #996699;
+}
+
+.Venice {
+   background-color: #C24747;
+}
+
+.Tel-Avive {
+   background-color: #E2674A;
+}
+
+.Cair {
+   background-color: #FFCC66;
+}
+
+.New-York {
+   background-color: #99CC99;
+}
+
+.New-Delhi {
+   background-color: #669999;
+}
+
+.San-Francisco {
+   background-color: #CC6699;
+}
+
+.Tokyo {
+   background-color: #339966;
+}
+
+.Sydney {
+   background-color: #666699;
 }
