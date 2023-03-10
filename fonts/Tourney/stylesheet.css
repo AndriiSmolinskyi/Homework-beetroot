@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Tourney';
+    src: url('Tourney-Thin.woff2') format('woff2'),
+        url('Tourney-Thin.woff') format('woff'),
+        url('Tourney-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tourney';
+    src: url('Tourney-ThinItalic.woff2') format('woff2'),
+        url('Tourney-ThinItalic.woff') format('woff'),
+        url('Tourney-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
