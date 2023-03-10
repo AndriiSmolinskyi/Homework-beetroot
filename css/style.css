@@ -1,7 +1,16 @@
+body {
+
+   background-image: url(/img/hm13/bg-picturebg.svg);
+   background-size: 760px 760px;
+   background-repeat: no-repeat;
+   background-position: right 150px;
+   background-attachment: fixed;
+}
 
 .wrapper {
    width: 1200px;
    margin: 0px auto;
+   display: flex;
 }
 
 .text {
@@ -18,6 +27,8 @@ a {
 }
 
 /*header*/
+
+
 
 .header {
    height: 80px;
@@ -43,7 +54,23 @@ a {
    margin-right: 600px;
 }
 
+
+
+/*sidebar*/
+
+.side {
+   width: 385px;
+   height: 462px;
+   position: sticky;
+   top: 0%;
+}
+
 /*main*/
+
+.main {
+   width: 785px;
+   margin-left: 30px;
+}
 
 .header,
 .sect {
@@ -84,4 +111,3 @@ h2 {
 .bg-grey {
    background-color: #DCDCDC;
 }
-
