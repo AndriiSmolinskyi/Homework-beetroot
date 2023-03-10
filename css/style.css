@@ -1,5 +1,4 @@
 body {
-
    background-image: url(/img/hm13/bg-picturebg.svg);
    background-size: 760px 760px;
    background-repeat: no-repeat;
@@ -65,7 +64,22 @@ a {
    top: 0%;
 }
 
+.liside {
+   border-bottom: 0 solid #9f9e9e;
+   padding-bottom: 10px;
+   border-width: 1px 0;
+   margin-bottom: 20px;
+}
+
 /*main*/
+
+hr {
+   display: inline-block;
+   width: 100px;
+   height: 8px;
+
+   background: #000000;
+}
 
 .main {
    width: 785px;
