@@ -34,6 +34,10 @@ a {
    display: flex;
    flex-direction: row;
    align-items: center;
+   position: sticky;
+   top: 0px;
+   background-color: #F9F8F8;
+
 }
 
 .eng {
@@ -61,7 +65,7 @@ a {
    width: 385px;
    height: 462px;
    position: sticky;
-   top: 0%;
+   top: 80px;
 }
 
 .liside {
