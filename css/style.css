@@ -74,8 +74,128 @@ h2 {
    color: #969696;
 }
 
-.small1{
+.small1 {
    margin-top: 7px;
    margin-bottom: 20px;
 }
+
+.radio {
+   display: none;
+}
+
+
+.fake {
+   margin-right: 8px;
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background-color: white;
+   position: relative;
+   border: 1px solid black;
+   border-radius: 50%;
+}
+
+.fake:before {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: block;
+   width: 10px;
+   height: 10px;
+   border: 6px solid #007BFF;
+   border-radius: 50%;
+   opacity: 0;
+}
+
+.radio:checked+.fake:before {
+   opacity: 1;
+}
+
+.normal-text1 {
+   position: relative;
+   bottom: 5px;
+   margin-right: 20px;
+}
+
+.selop {
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 22px;
+   color: #545454;
+}
+
+select {
+   color: #545454;
+}
+
+select {
+   width: 170px;
+   appearance: none;
+   overflow: hidden;
+   background: url('../img/hm14/➡️\ Rightstrelka.svg') no-repeat right;
+}
+
+.btn-text {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 15px;
+   color: #FFFFFF;
+}
+
+.button {
+   display: block;
+   width: 100%;
+   height: 38px;
+   background-color: #007BFF;
+   margin-top: 20px;
+   border: #007BFF;
+   border-radius: 6px;
+}
+
+.button:hover{
+   transform: scale(1.01);
+}
+
+.mid-text {
+   font-size: 13px;
+}
+
+a{
+   text-decoration: none;
+}
+
+.blue {
+   font-weight: 400;
+   font-size: 13px;
+   color: #007BFF;
+}
+
+.text-block{
+   margin: auto;
+   text-align: center;
+   width: 380px;
+   height: 36px;
+}
+
+hr{
+   margin-top: 20px;
+   height: 1px;
+   color: #E4E4E4;
+}
+
+.login{
+   margin-top: 20px;
+   text-align: center;
+}
+
+.blue1{
+   margin-left: 20px;
+}
+
+/*2*/
+
+
 
