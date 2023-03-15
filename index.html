@@ -55,7 +55,7 @@
                 <div class="nam">
                     <label class="Country">
                         <div class="normal-text">Country</div>
-                        <select name="Country" class="input">
+                        <select name="Country" class="input can">
                             <option value="" disabled selected class="selop">Select</option>
                             <option value="['Nigeria','NG']">Nigeria</option>
                             <option value="['Afghanistan','AF']">Afghanistan</option>
@@ -94,6 +94,66 @@
         </div>
 
         <div class="wrapper two">
+            <h2>Profile</h2>
+            <form action="#">
+                <form action="#">
+                    <img src="img/Andrii.jpg" alt="$" class="img">
+                    <label class="custom-file-upload">
+                        <input type="file"/>
+                        <span class="material-symbols-outlined camera">
+                        add_a_photo</span>
+                    </label>
+                    <button type="reset" class="trashb"><span class="material-symbols-outlined trash">delete</span></button>
+                </form>
+                <div class="small-text mb">Up to 1 MB (300x300 px)</div>
+
+                <div class="nam">
+                    <label class="name">
+                        <div class="normal-text">First Name</div>
+                        <input type="text" name="name" required class="input" minlength="2">
+                    </label>
+                    <label class="name">
+                        <div class="normal-text">E-mail</div>
+                        <input type="text" name="email" required class="input" minlength="2">
+                    </label>
+                </div>
+
+                <div class="nam">
+                    <label class="Country">
+                        <div class="normal-text">Country</div>
+                        <select name="Country" class="input can">
+                            <option value="" disabled selected class="selop">Select</option>
+                            <option value="['Nigeria','NG']">Nigeria</option>
+                            <option value="['Afghanistan','AF']">Afghanistan</option>
+                            <option value="['Ãƒâ€¦land Islands','AX']">Ãƒâ€¦land Islands</option>
+                            <option value="['Albania','AL']">Albania</option>
+                            <option value="['Algeria','DZ']">Algeria</option>
+                            <option value="['American Samoa','AS']">American Samoa</option>
+                            <option value="['Andorra','AD']">Andorra</option>
+                            <option value="['Angola','AO']">Angola</option>
+                            <option value="['Anguilla','AI']">Anguilla</option>
+                        </select>
+                    </label>
+                    <label class="City">
+                        <div class="normal-text">City</div>
+                        <input type="text" name="city" required class="input" minlength="2">
+                    </label>
+                </div>
+
+                <div class="nam">
+                    <label class="name">
+                        <div class="normal-text">Zip code</div>
+                        <input type="text" name="name" required class="input" minlength="2">
+                    </label>
+                    <label class="name">
+                        <div class="normal-text">Phone Number</div>
+                        <input type="phone" name="email" required class="input" minlength="9">
+                    </label>
+                </div>
+                <div>
+                    <button type="submit" class="button update"> <span class="btn-text">Update</span> </button>
+                </div>
+            </form>
 
         </div>
     </div>
