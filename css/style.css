@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 28px;
+}
+
+h1 {
+   font-family: 'Quicksand';
+   font-weight: 500;
+   font-size: 35px;
+   line-height: 35px;
+}
+
+h2 {
+   font-family: 'Nunito Sans';
+   font-weight: 600;
+   font-size: 40px;
+   line-height: 52px;
+}
+
+h3 {
+   font-size: 24px;
+   line-height: 21px;
+   margin-bottom: 15px;
+}
+
+.greytext {
+   color: #7690A8;
+   margin-bottom: 15px;
+}
+
+.greentext {
+   color: #3DB370;
+}
+
+.hover {
+   display: flex;
+   width: 64px;
+   height: 64px;
+   border: 2px solid #EFEEF3;
+   border-radius: 16px;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 30px;
+}
+
+
+.hover:hover .p1 {
+   fill: #E1F4F5;
+}
+
+.hover:hover .p2 {
+   fill: #F4FEFF;
+}
+
+.hover:hover .p3 {
+   fill: #CAEFF2;
+}
+
+.hover:hover .p4 {
+   fill: #52C29D;
+}
+
+.header {
+   max-width: 100%;
+   height: 80px;
+   border-bottom: 1px solid #EFEEF3;
+}
+
+.wrapper {
+   max-width: 1170px;
+   margin: 0 auto;
+}
+
+.logob {
+   width: 200px;
+   height: 80px;
+   display: inline-flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/* main */
+
+.main {
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+
+.maintext {
+   margin-bottom: 40px;
+}
+
+.cards {
+   display: flex;
+   gap: 30px;
+}
+
+.item {
+   max-width: 370px;
+   padding: 40px;
+   border: 1px solid #E5EAF4;
+   border-radius: 8px;
+}
+
+.item:hover {
+   border: 1px solid #3DB370;
+}
+
+.cards {
+   display: inline-flex;
+   justify-content: space-between;
+}
+
+.text {
+   max-width: 275px;
+   margin-bottom: 30px;
+}
+
+/* footer */
+
+.footer {
+   width: 100%;
+   background-color: #16133D;
+   padding-top: 40px;
+   padding-bottom: 40px;
+}
+
+footer h1 {
+   color: white;
+}
+
+.itemsoc {
+   display: inline-flex;
+   width: 38px;
+   height: 38px;
+   border: 2px solid white;
+   background-color: white;
+   border-radius: 6px;
+   justify-content: center;
+   align-items: center;
+}
+
+.socials {
+   display: flex;
+   gap: 10px;
+}
+
+.itemsoc:hover .soc {
+   fill: #3DB370;
+}
+
+.logof {
+   width: 200px;
+   display: inline-flex;
+   justify-content: space-between;
+   margin-bottom: 40px;
+}
