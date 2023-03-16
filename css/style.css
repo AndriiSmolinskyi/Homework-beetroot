@@ -54,20 +54,19 @@ h3 {
    margin-bottom: 30px;
 }
 
-
-.hover:hover .p1 {
+.item:hover .hover svg .p1 {
    fill: #E1F4F5;
 }
 
-.hover:hover .p2 {
+.item:hover .hover svg .p2 {
    fill: #F4FEFF;
 }
 
-.hover:hover .p3 {
+.item:hover .hover svg .p3 {
    fill: #CAEFF2;
 }
 
-.hover:hover .p4 {
+.item:hover .hover svg .p4 {
    fill: #52C29D;
 }
 
