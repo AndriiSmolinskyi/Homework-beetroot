@@ -5,13 +5,6 @@
     background-color: $bgColor;
 }
 
-@mixin blockFonts($size, $color, $family) {
-  font-size: $size;
-  color: $color;
-  font-family: $family;
-}
-
-
 @mixin corner-icon($name, $top-or-bottom, $left-or-right) {
 
   .icon-#{$name} {
