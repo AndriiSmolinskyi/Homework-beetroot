@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Raleway:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Raleway:wght@500&family=Roboto:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Open+Sans:wght@700&family=Raleway:wght@500&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;600&display=swap');
 
 @import "./reset";
 @import "./variables";
@@ -8,169 +7,44 @@
 @import "./responsive";
 
 
-$maincolor: #FFCC00;
-
-@mixin fs($fs, $col, $fm) {
+@mixin font($fs, $col, $fm, $fw) {
    font-size: $fs;
    color: $col;
    font-family: $fm;
+   font-weight: $fw;
 }
 
-%borderphoto {
-   width: 100px;
-   height: 100px;
-   position: absolute;
-}
 
 .wrapper {
    max-width: 1170px;
-   font-family: 'Raleway';
-   font-style: normal;
-   font-weight: 500;
-   text-align: center;
    margin: 0px auto;
-   margin-top: 120px;
 }
 
 .header {
-   width: 450px;
-   height: 157px;
-   margin: 0px auto;
-
-   .header-text {
-      @include fs(18px, #898F8F, 'Raleway');
-   }
-
-   h1 {
-      @include fs(60px, $maincolor, 'Roboto');
-   }
-
-   .divider {
-      margin-top: 40px;
-      display: flex;
-      gap: 6px;
-
-      h1 {
-         margin-top: 15px;
-      }
-
-      hr {
-         width: 210px;
-         border-top: 1px solid $maincolor;
-      }
-   }
-}
-
-.slider {
-   max-width: 1050px;
+   height: 100px;
    display: flex;
+   align-items: center;
    justify-content: space-between;
-   margin: 0px auto;
-   margin-top: 115px;
-   position: relative;
-}
 
-.left {
-   max-width: 430px;
-   height: 430px;
-   position: relative;
-   margin-top: 30px;
+   .header__beetwen {
+      display: flex;
+      gap: 84px;
 
-   .photo {
-      max-width: 400px;
-      position: absolute;
-      left: 15px;
-      border: 1px solid $maincolor;
-   }
+      .header__nav {
+         display: flex;
+         gap: 42px;
+         flex-wrap: wrap;
 
-   .deegre1 {
-      @extend %borderphoto;
-      border-top: 1px solid $maincolor;
-      border-left: 1px solid $maincolor;
-      top: -15px;
-   }
+         .nav__item {
+            @include font(14px, black, 'Lato', 400px)
+         }
 
-   .deegre2 {
-      @extend %borderphoto;
-      border-bottom: 1px solid $maincolor;
-      border-left: 1px solid $maincolor;
-      bottom: 15px;
-   }
-
-   .deegre3 {
-      @extend %borderphoto;
-      border-top: 1px solid $maincolor;
-      border-right: 1px solid $maincolor;
-      left: 330px;
-      top: -15px;
-   }
-
-   .deegre4 {
-      @extend %borderphoto;
-      border-bottom: 1px solid $maincolor;
-      border-right: 1px solid $maincolor;
-      bottom: 15px;
-      left: 330px;
-   }
-
-}
-
-.right {
-   text-align: center;
-   max-width: 430px;
-   position: relative;
-
-   h2 {
-      @include fs(36px, #666666, 'Roboto');
-   }
-
-   hr {
-      margin-top: 30px;
-      width: 100px;
-      border-top: 1px solid $maincolor;
-      margin-bottom: 30px;
-   }
-
-   .text1 {
-      @include fs(24px, #666666, 'Raleway');
-   }
-
-   .social {
-      margin-top: 30px;
-      margin-bottom: 60px;
-   }
-
-   .lorem {
-      @include fs(14px, #333333, 'Raleway');
-   }
-
-   .dashed {
-      margin-top: 20px;
-      margin-bottom: 25px;
-      width: 50px;
-      border: 1px solid $maincolor;
-      position: absolute;
-      right: 190px;
-   }
-
-   .button {
-      margin-top: 50px;
-      border: 1px solid $maincolor;
-      @include fs(14px, #666666, 'Open Sans');
-      background-color: white;
-      width: 118px;
-      height: 24px;
-
-      &:hover {
-         transform: scale(1.1);
+         .nav__item_active{
+            text-decoration: underline
+         }
       }
    }
 }
 
-.centerline {
-   border-right: 1px solid $maincolor;
-   height: 560px;
-   position: absolute;
-   left: 524.5px;
-   top: -50px;
-}
+
+
