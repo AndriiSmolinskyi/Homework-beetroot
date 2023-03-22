@@ -1,8 +1,8 @@
 @use "./variables";
 
 @mixin borderWithBackground($bgColor) {
-    border: 1px solid $color-red;
-    background-color: $bgColor;
+  border: 1px solid $color-red;
+  background-color: $bgColor;
 }
 
 @mixin corner-icon($name, $top-or-bottom, $left-or-right) {
