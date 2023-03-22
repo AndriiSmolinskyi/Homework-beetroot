@@ -7,12 +7,14 @@
 @import "./responsive";
 
 
-@mixin font($fs, $col, $fm, $fw) {
-   font-size: $fs;
-   color: $col;
+@mixin font($fm, $fs, $fw, $col) {
    font-family: $fm;
+   font-size: $fs;
    font-weight: $fw;
+   color: $col;
 }
+
+$h1-size: 48px;
 
 
 .wrapper {
@@ -36,15 +38,98 @@
          flex-wrap: wrap;
 
          .nav__item {
-            @include font(14px, black, 'Lato', 400px)
-         }
-
-         .nav__item_active{
-            text-decoration: underline
+            text-decoration: none;
+            color: black;
+            @include font(14px, black, 'Lato', 400px);
          }
       }
    }
 }
 
+.first-screen {
+   max-width: 1440px;
+   height: 600px;
+   margin: auto;
+   background-image: url('/img/Hm-18/bg-imagebg.jpg');
+   background-repeat: no-repeat;
+   padding-top: 100px;
 
+   h1 {
+      @include font('Red Hat Display', 48px, 600px, black);
+      max-width: 770px;
+   }
+}
 
+.main {
+   margin-top: 90px;
+   margin-bottom: 90px;
+}
+
+.blog {
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+
+   h2 {
+      font-family: 'Red Hat Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+   }
+
+   .article {
+      max-width: 1170px;
+      display: flex;
+      gap: 30px;
+
+      .ar_info {
+         max-width: 570px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+      }
+
+      .ar_ph {
+         max-width: 570px;
+      }
+
+      .info__title {
+         font-family: 'Red Hat Display';
+         font-style: normal;
+         font-weight: 500;
+         font-size: 23px;
+      }
+
+      .info__tag,
+      .info__date,
+      .info__text {
+         font-family: 'Lato';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 16px;
+         color: #7B7B7B;
+      }
+
+      .info__text {
+         margin-top: 50px;
+         color: #565656;
+         max-width: 448px;
+      }
+
+      .info__title {
+         max-width: 369px;
+         font-family: 'Red Hat Display';
+         font-style: normal;
+         font-weight: 500;
+         font-size: 23px;
+         margin-top: 30px;
+         margin-bottom: 15px;
+      }
+
+   }
+}
+
+.blog__article_2 {
+   display: flex;
+   justify-content: flex-end;
+}
