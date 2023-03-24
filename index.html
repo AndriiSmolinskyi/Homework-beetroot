@@ -23,11 +23,16 @@
                     <a href="#" class="nav__item">BLOG</a>
                     <a href="#" class="nav__item">CONTACT</a>
                 </nav>
+
                 <div class="header__search"><img src="img/Hm-18/searchsearch.svg" alt="searc"></div>
 
+                <div class="burger">
+                    <span></span>
+                </div>
+
+            </div>
         </header>
     </div>
-
 
     <div class="first-screen">
         <div class="wrapper">
@@ -190,6 +195,13 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('.burger').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.header__nav').classList.toggle('open');
+        })
+    </script>
 
 </body>
 
