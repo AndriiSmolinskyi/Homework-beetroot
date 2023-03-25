@@ -632,6 +632,10 @@ h3 {
    }
 }
 
+
+
+
+
 .open {
    display: flex !important;
 }
@@ -672,7 +676,6 @@ h3 {
 }
 
 
-/* Добавляем класс active для анимации иконки бургера */
 .burger.active span {
    transform: scale(0)
 }
@@ -688,7 +691,6 @@ h3 {
 }
 
 
-/* При разрешении экрана 900px и ниже, выводим на экран иконку бургера */
 @media (max-width: 1024px) {
 
    .burger {
@@ -696,7 +698,7 @@ h3 {
    }
 
    .header__nav {
-      display: none;
+      display: none !important;
       flex-direction: column;
       position: fixed;
       height: 30%;
@@ -710,6 +712,10 @@ h3 {
       padding: 50px 40px;
       background-color: white;
       animation: burgerAnimation 0.4s;
+
+      &.open {
+         display: flex !important;
+      }
    }
 
    .header nav {
