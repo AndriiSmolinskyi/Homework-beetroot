@@ -130,8 +130,9 @@
       }
    }
 
-   .first__descrip__text{
+   .first__descrip__text {
       width: 50%;
+
       @include rwd(481px, 768px) {
          width: 100%;
       }
@@ -166,10 +167,101 @@ img {
    width: 100%;
 }
 
-.section{
+.section {
    @include masec;
 
-   img{
+   img {
       margin-bottom: 20px;
+   }
+}
+
+.footer {
+   padding-top: 70px;
+   padding-bottom: 30px;
+   background-color: lightgray;
+
+   @include rwd(481px, 768px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+
+   @include rwd(300px, 480px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+
+   .copy {
+      text-align: center;
+      margin-top: 15px;
+
+      @include rwd(481px, 768px) {
+         margin-top: 50px;
+      }
+
+      @include rwd(300px, 480px) {
+         margin-top: 50px;
+      }
+   }
+
+   .ctasoc {
+
+      display: flex;
+      justify-content: space-between;
+
+      @include rwd(481px, 768px) {
+         display: flex;
+         flex-direction: column;
+         gap: 30px;
+         align-items: center;
+      }
+
+      @include rwd(300px, 480px) {
+         display: flex;
+         flex-direction: column;
+         gap: 30px;
+         align-items: center;
+      }
+
+      .cta {
+         .foot__title {
+            font-family: 'Red Hat Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            margin-bottom: 20px;
+         }
+
+         .contacts {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 166%;
+         }
+
+         @include rwd(481px, 768px) {
+            text-align: center;
+         }
+
+         @include rwd(300px, 480px) {
+            text-align: center;
+         }
+      }
+
+      .socials {
+         display: flex;
+         gap: 30px;
+
+         .socials__item {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #565656;
+            display: flex;
+
+            .socimg {
+               transform: scale(0.5);
+            }
+         }
+      }
    }
 }
