@@ -20,7 +20,6 @@
    }
 }
 
-
 // @include rwd(768px, 1024px){}
 
 // min-width: 768px;
@@ -28,4 +27,149 @@
 
 // @include rwd(320px, 767px){}
 
+@mixin matit {
+   margin-bottom: 50px;
 
+   @include rwd(481px, 768px) {
+      margin-bottom: 50px;
+   }
+
+   @include rwd(300px, 480px) {
+      margin-bottom: 40px;
+   }
+}
+
+@mixin maimg {
+   margin-bottom: 20px;
+}
+
+@mixin masec {
+   margin-bottom: 90px;
+
+   @include rwd(481px, 768px) {
+      margin-bottom: 70px;
+   }
+
+   @include rwd(300px, 480px) {
+      margin-bottom: 70px;
+   }
+}
+
+.wrapper {
+   max-width: 1440px;
+   padding-right: 135px;
+   padding-left: 135px;
+   margin: 0 auto;
+
+   @include rwd(769px, 1050px) {
+      max-width: 1050px;
+      padding-right: 65px;
+      padding-left: 65px;
+   }
+
+   @include rwd(481px, 768px) {
+      max-width: 768px;
+      padding-right: 34px;
+      padding-left: 34px;
+   }
+
+   @include rwd(300px, 480px) {
+      max-width: 480px;
+      padding-right: 10px;
+      padding-left: 10px;
+   }
+
+}
+
+.header {
+   height: 100px;
+   font-family: 'Lato';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 150%;
+   letter-spacing: 0.5em;
+   display: flex;
+   align-items: center;
+
+   @include rwd(481px, 768px) {
+      height: 60px;
+   }
+
+   @include rwd(300px, 480px) {
+      height: 60px;
+   }
+}
+
+.first {
+   @include masec;
+
+   h1 {
+      font-family: 'Red Hat Display';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      margin-bottom: 70px;
+
+      @include rwd(300px, 768px) {
+         font-size: 33px;
+         margin-bottom: 50px;
+      }
+   }
+
+
+   img {
+      margin-bottom: 90px;
+
+      @include rwd(481px, 768px) {
+         margin-bottom: 90px;
+      }
+
+      @include rwd(300px, 480px) {
+         margin-bottom: 70px;
+      }
+   }
+
+   .first__descrip__text{
+      width: 50%;
+      @include rwd(481px, 768px) {
+         width: 100%;
+      }
+
+      @include rwd(300px, 480px) {
+         width: 100%;
+      }
+   }
+
+}
+
+.title {
+   font-family: 'Red Hat Display';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 28px;
+   @include matit;
+}
+
+.text {
+   font-family: 'Lato';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 19px;
+   line-height: 32px;
+   letter-spacing: 0.05em;
+   color: $color2;
+}
+
+
+img {
+   width: 100%;
+}
+
+.section{
+   @include masec;
+
+   img{
+      margin-bottom: 20px;
+   }
+}
