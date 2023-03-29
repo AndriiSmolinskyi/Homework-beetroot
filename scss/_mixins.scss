@@ -15,3 +15,42 @@
   }
 
 }
+
+@mixin h1tl {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  color: $color1;
+}
+
+
+@mixin firuntit {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: $color1;
+}
+
+@mixin searhtxt {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: $colorinput;
+}
+
+@mixin searhbtn {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: $color1;
+}
