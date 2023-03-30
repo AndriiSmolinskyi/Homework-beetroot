@@ -54,3 +54,41 @@
   letter-spacing: 0.1em;
   color: $color1;
 }
+
+@mixin h3s {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: $color1;
+}
+
+@mixin htxt {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color1;
+}
+
+@mixin h2txt {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color1;
+}
+
+@mixin text {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: $color1;
+}

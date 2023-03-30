@@ -20,130 +20,24 @@
    }
 }
 
-ul {
-   text-decoration: none;
-}
-
-
-// .open{
-//    display: flex !important;
-// }
-
-// .header{
-//    display: flex;
-//    align-items: center;
-//    justify-content: space-between;
-//    min-height: 100px;
-//    background-color: #3E424B;
-//    color: #FAF6F2;
-//    padding: 0 40px;
-// }
-
-// .nav{
-//    display: flex;
-//    width: 700px;
-//    padding: 0 40px;
-// }
-
-// .nav ul{
-//    width: 100%;
-//    list-style: none;
-//    display: flex;
-//    justify-content: space-between;
-// }
-
-// .burger{
-//    display: none;
-//    position: relative;
-//    z-index: 50;
-//    align-items: center;
-//    justify-content: flex-end;
-//    width: 30px;
-//    height: 18px;
-// }
-
-// .burger span{
-//    height: 2px;
-//    width: 80%;
-//    transform: scale(1);
-//    background-color: #FAF6F2;
-// }
-
-// .burger::before, .burger::after{
-//    content: '';
-//    position: absolute;
-//    height: 2px;
-//    width: 100%;
-//    background-color: #FAF6F2;
-//    transition: all 0.3s ease 0s;
-// }
-
-// .burger::before { top: 0 }
-
-// .burger::after { bottom: 0 }
-
-// .burger.active span { transform: scale(0) }
-
-// .burger.active::before{
-//    top: 50%;
-//    transform: rotate(-45deg) translate(0, -50%);
-// }
-
-// .burger.active::after{
-//    bottom: 50%;
-//    transform: rotate(45deg) translate(0, 50%);
-// }
-
-// @media (max-width: 900px) {
-
-//    .burger { display: flex }
-
-//    .nav{
-//        display: none;
-//        flex-direction: column;
-//        position: fixed;
-//        height: 300px;
-//        width: 576px;
-//        top: 0; bottom: 0; left: 0; right: 0;
-//        z-index: 50;
-//        padding-top: 20px;
-//        overflow-y: auto;
-//        background-color: black;
-//        animation: burgerAnimation 0.4s;
-//    }
-
-//    .nav ul{
-//        flex-direction: column;
-//        row-gap: 30px;
-//    }
-// }
-
-// @keyframes burgerAnimation {
-//    from {opacity: 0}
-//    to {opacity: 1}
-// }
-
-
 .wrapper {
    max-width: 1360px;
+   width: 100%;
    padding-right: 110px;
    padding-left: 110px;
    margin: 0 auto;
 
    @include lg {
-      max-width: 1024px;
       padding-right: 32px;
       padding-left: 32px;
    }
 
    @include md {
-      max-width: 768px;
       padding-right: 24px;
       padding-left: 24px;
    }
 
    @include sm {
-      max-width: 576px;
       padding-right: 18px;
       padding-left: 18px;
    }
@@ -164,7 +58,6 @@ ul {
    height: 862px;
    background-size: cover;
    display: flex;
-   justify-content: center;
 
    .first__title {
       @include h1tl;
@@ -184,14 +77,13 @@ ul {
    .search-form {
       background-color: $color1;
       display: flex;
-      width: 647px;
+      max-width: 647px;
+      margin: 0 auto;
       height: 60px;
       justify-content: space-between;
       align-items: center;
-      padding-left: 36px;
       padding-right: 4px;
       margin-bottom: 211px;
-
 
       &:hover {
          border: 2px solid $color2;
@@ -199,10 +91,11 @@ ul {
 
       .searh-form__txt {
          display: flex;
-         width: 275px;
+         width: 100%;
          border: none;
          outline: none;
          @include searhtxt;
+         padding-left: 36px;
       }
 
       .searh-form__btn {
@@ -231,5 +124,299 @@ ul {
       align-items: center;
       @include searhbtn;
       letter-spacing: 0.2em;
+   }
+}
+
+.header {
+   width: 100%;
+   height: 84px;
+   background-color: $color2;
+   display: flex;
+   align-items: center;
+
+   @include rwd(577px, 768px) {
+      height: 136px;
+   }
+
+   @include sm {
+      height: 84px;
+   }
+
+   a {
+      @include htxt;
+      opacity: 0.8;
+   }
+
+   a:hover {
+      opacity: 1;
+   }
+
+
+   .hdfl {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include rwd(577px, 768px) {
+         flex-direction: column;
+      }
+
+      @include sm {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+
+      .header__logo {
+         @include h3s;
+
+         @include rwd(577px, 768px) {
+            margin-bottom: 32px;
+         }
+
+         @include sm {
+            display: inline-flex;
+         }
+      }
+
+      .nav ul {
+         display: flex;
+         max-width: 575px;
+         gap: 40px;
+         @include htxt;
+         cursor: pointer;
+
+         @include sm {
+            gap: 24px;
+
+         }
+      }
+   }
+}
+
+
+
+.open {
+   display: flex !important;
+}
+
+.burger {
+   display: none;
+   position: relative;
+   z-index: 50;
+   align-items: center;
+   justify-content: flex-end;
+   width: 30px;
+   height: 18px;
+}
+
+.burger span {
+   height: 2px;
+   width: 100%;
+   transform: scale(1);
+   background-color: #FAF6F2;
+}
+
+.burger::before,
+.burger::after {
+   content: '';
+   position: absolute;
+   height: 2px;
+   width: 100%;
+   background-color: #FAF6F2;
+   transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+   top: 0
+}
+
+.burger::after {
+   bottom: 0
+}
+
+.burger.active span {
+   transform: scale(0)
+}
+
+.burger.active::before {
+   top: 50%;
+   transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+   bottom: 50%;
+   transform: rotate(45deg) translate(0, 50%);
+}
+
+@media (max-width: 576px) {
+
+   .burger {
+      display: inline-flex;
+      margin-left: auto;
+   }
+
+   .nav {
+      display: none;
+      flex-direction: column;
+      height: 216px;
+      width: 100%;
+      position: absolute;
+      top: 945px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      overflow-y: auto;
+      background-color: $color2;
+      padding-top: 32px;
+   }
+
+   .nav ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+      z-index: 50;
+   }
+
+   .nav ul li {
+      text-align: center;
+   }
+
+}
+
+h2 {
+   @include h2txt;
+}
+
+.text{
+   @include text;
+}
+
+.btn2{
+   width: 213px;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   @include searhbtn;
+   background-color: $color2;
+   cursor: pointer;
+   opacity: 0.8;
+
+   &:hover{
+      opacity: 1;
+   }
+}
+
+.whyblock {
+   width: 100%;
+   height: 704px;
+   background-image: url(/img/bg/WhyBackgroundbg2.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   @include md {
+      height: 659px;
+   }
+
+   @include sm {
+      height: 630px;
+   }
+
+   .why {
+      z-index: 0;
+      display: flex;
+      padding-top: 124px;
+      padding-bottom: 124px;
+      @include md {
+         padding-top: 60px;
+         padding-bottom: 60px;
+         display: flex;
+         flex-direction: column-reverse;
+      }
+   
+      @include sm {
+         padding-top: 60px;
+         padding-bottom: 60px;
+      }
+
+      .why__content{
+         margin-top: 66px;
+         max-width: 558px;
+         z-index: 0;
+         @include md {
+            max-width: 768px;
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+
+         @include sm {
+            max-width: 576px;
+            margin-top: 37px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+
+         &__title{
+            margin-bottom: 24px;
+            @include sm {
+               margin-bottom: 19px;
+            }
+         }
+
+         .why__content__text{
+            margin-bottom: 32px;
+            @include md {
+               margin-bottom: 24px;
+            }
+            .why__content__text-1{
+               margin-bottom: 20px;
+            }
+         }
+      }
+
+      .why__images{
+         width: 461px;
+         display: flex;
+         flex-direction: column;
+         row-gap: 16px;
+         z-index: 0;
+         @include md {
+            display: flex;
+            flex-direction: row;
+            max-width: 720px;
+            gap:24px;
+            row-gap: 0px;
+            @include md {
+               width: 100%;
+               height: auto;
+               .whyimg{  
+                  width: 100%;
+                  height: auto;
+               }
+            }
+         }
+         
+         .why__images__img{
+            max-width: 348px;
+            height: auto;
+         }
+
+         .wii1{
+            align-self: flex-start;
+         }
+
+         .wii2{
+            align-self: flex-end;
+         }
+      }
+
    }
 }
