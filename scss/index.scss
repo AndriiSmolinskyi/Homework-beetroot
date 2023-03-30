@@ -686,6 +686,11 @@ h5 {
       .footer__socials {
          display: flex;
          gap: 32px;
+         .footer__socials__item:hover{
+            .icon{
+               fill: #5373FD;
+            }
+         }
       }
    }
 }
