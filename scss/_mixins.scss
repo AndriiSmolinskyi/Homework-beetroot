@@ -92,3 +92,21 @@
   letter-spacing: 0.1em;
   color: $color1;
 }
+
+@mixin h6txt {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  color: $color1;
+}
+
+@mixin h5txt {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: $color1;
+}
