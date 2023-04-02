@@ -110,3 +110,10 @@
   line-height: 28px;
   color: $color1;
 }
+
+@mixin font($fm, $fs, $fw, $col) {
+  font-family: $fm;
+  font-size: $fs;
+  font-weight: $fw;
+  color: $col;
+}

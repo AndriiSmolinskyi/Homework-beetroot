@@ -7,20 +7,6 @@
 @import "./responsive";
 
 
-@mixin font($fm, $fs, $fw, $col) {
-   font-family: $fm;
-   font-size: $fs;
-   font-weight: $fw;
-   color: $col;
-}
-
-@mixin rwd($min, $max) {
-   @media (min-width: $min) and (max-width: $max) {
-      @content;
-   }
-}
-
-
 * {
    transition: all 0.3s ease;
 }
@@ -105,11 +91,12 @@
          width: 139px;
          height: 52px;
          @include searhbtn;
-         opacity: 0.9;
          cursor: pointer;
 
          &:hover {
-            opacity: 1;
+            background-color: $color1;
+            border: 2px solid $color2;
+            color: $color2;
          }
       }
    }
@@ -302,10 +289,11 @@ h2 {
    @include searhbtn;
    background-color: $color2;
    cursor: pointer;
-   opacity: 0.9;
 
    &:hover {
-      opacity: 1;
+      background-color: $color1;
+      border: 2px solid $color2;
+      color: $color2;
    }
 }
 
@@ -330,6 +318,8 @@ h2 {
       display: flex;
       padding-top: 124px;
       padding-bottom: 124px;
+      max-width: 1360px;
+      justify-content: space-between;
 
       @include md {
          padding-top: 60px;
@@ -431,6 +421,7 @@ h2 {
 .steps-bg {
    background-color: $color3;
    height: 306px;
+
 
    @include md {
       height: 658px;
@@ -583,7 +574,6 @@ h5 {
       height: 336px;
       display: flex;
 
-
       @include lg {
          height: 336px;
       }
@@ -609,13 +599,12 @@ h5 {
       }
 
       .tourists__block__content {
-         max-width: 760px;
+         max-width: 885px;
          height: 308px;
          display: flex;
          flex-direction: column;
          justify-content: center;
-         padding: 20px;
-         text-align: center;
+         padding: 24px;
          background-color: $color3;
 
          @include lg {
@@ -623,12 +612,12 @@ h5 {
          }
 
          @include md {
-            padding: 20px;
+            // padding: 20px;
             height: auto;
          }
 
          @include sm {
-            padding: 20px;
+            // padding: 20px;
             height: auto;
          }
 
@@ -686,8 +675,9 @@ h5 {
       .footer__socials {
          display: flex;
          gap: 32px;
-         .footer__socials__item:hover{
-            .icon{
+
+         .footer__socials__item:hover {
+            .icon {
                fill: #5373FD;
             }
          }
