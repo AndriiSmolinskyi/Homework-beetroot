@@ -7,12 +7,14 @@ let profile_name = 'Vasiliy';
 const NUMBER_PI = 3.14;
 
 // let a;
+
 /*let 1user;
 let user-name;
-let console.log */
+let console.log;
+let 1234; 
+let консоль*/
 
 userName = null;
-
 userName = prompt('Whats your name?');
 alert(`Hello, ${userName}!`);
 
@@ -29,10 +31,10 @@ alert(`${sideSquare*4} см`);
 
 //Запитай у користувача радіус кола і виведи площу такої окружності.
 
-const p = 3.14;
+const PI = 3.14;
 let radius;
 radius = prompt('Введіть радіус кола щоб дізнатись його площу!');
-let squareCircle = p * (radius*2);
+let squareCircle = PI * (radius*radius);
 alert(squareCircle + 'см');
 
 // Запитай у користувача відстань в кілометрах між двома містами і за скільки годин він 
