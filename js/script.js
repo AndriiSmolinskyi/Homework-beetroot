@@ -3,11 +3,13 @@
 let userName = 'Vasiliy';
 let userSurname = 'Smolinskiy';
 let secondName = 'Smolinskiy';
-let profileName = 'Vasiliy';
+let profile_name = 'Vasiliy';
+const NUMBER_PI = 3.14;
 
 // let a;
 /*let 1user;
-let user-name; */
+let user-name;
+let console.log */
 
 userName = null;
 
