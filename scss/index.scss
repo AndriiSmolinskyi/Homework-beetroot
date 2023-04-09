@@ -6,49 +6,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 
-@mixin font( $fs , $fw, $color){
+@mixin font($fs , $fw, $color) {
    font-family: 'Open Sans', sans-serif;
    font-size: $fs;
    font-weight: $fw;
    color: $color;
 }
 
-.wrapper{
+.wrapper {
    max-width: 970px;
    margin: 0 auto;
-   @include lg{
+
+   @include lg {
       padding-left: 30px;
       padding-right: 30px;
    }
-   @include md{
+
+   @include md {
       padding-left: 20px;
       padding-right: 20px;
    }
 }
 
-.header{
+.header {
    height: 80px;
    display: flex;
    justify-content: center;
    align-items: center;
    border-bottom: 1px solid $cllight;
-   @include sm{
+
+   @include sm {
       padding-top: 30px;
       padding-bottom: 30px;
       height: auto;
    }
-   .nav{
+
+   .nav {
       display: flex;
-      gap:40px;
-      @include sm{
+      gap: 40px;
+
+      @include sm {
          flex-direction: column;
       }
-      .nav__item{
+
+      .nav__item {
          @include font(18px, 400px, $cllight);
-         a{
-            text-decoration:none;
+
+         a {
+            text-decoration: none;
             color: $cllight;
-            &:hover{
+
+            &:hover {
                color: $cldark;
             }
          }
@@ -56,8 +64,206 @@
    }
 }
 
-.image{
+.image {
    width: 100%;
    height: auto;
 }
 
+.first {
+   padding-top: 12px;
+
+   &__title {
+      @include font(48px, 700px, $cldark);
+      margin-bottom: 50px;
+
+      @include sm {
+         margin-bottom: 40px;
+      }
+   }
+}
+
+section,
+footer {
+   padding-top: 100px;
+   padding-bottom: 100px;
+
+   @include md {
+      padding-top: 80px;
+      padding-bottom: 80px;
+   }
+
+   @include sm {
+      padding-top: 60px;
+      padding-bottom: 60px;
+   }
+}
+
+.title {
+   @include font(34px, 700px, $cldark);
+   text-align: center;
+}
+
+.text {
+   @include font(18px, 400px, $cldark);
+   line-height: 25px;
+}
+
+.bg-color {
+   background-color: $bgcolor;
+}
+
+.about {
+   &__title {
+      margin-bottom: 50px;
+      text-align: center;
+
+      @include sm {
+         margin-bottom: 25px;
+      }
+   }
+
+   .about__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
+
+      &__1 {
+         max-width: 480px;
+         text-align: center;
+      }
+
+      &__2 {
+         max-width: 406px;
+         text-align: center;
+      }
+
+      &__3 {
+         max-width: 321px;
+         text-align: center;
+      }
+   }
+}
+
+.skills {
+
+   .skills__text {
+      text-align: center;
+      padding-bottom: 50px;
+
+      @include sm {
+         padding-bottom: 40px;
+      }
+   }
+
+   .skills__list {
+      display: flex;
+      justify-content: space-between;
+
+      @include md {
+         flex-direction: column;
+      }
+
+      &__item {
+         text-align: center;
+
+         .skill_ph {
+            margin-bottom: 25px;
+         }
+
+         .skills_list__item__title {
+            @include font(14px, 700px, $cllight);
+            margin-bottom: 60px;
+            text-align: center;
+
+            @include md {
+               margin-bottom: 40px;
+            }
+         }
+
+         .fig {
+            margin-bottom: 75px;
+
+            @include md {
+               margin-bottom: 55px;
+            }
+         }
+
+         .rate {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 60px;
+         }
+
+      }
+   }
+
+
+}
+
+.portfolio {
+   .portfolio__item__text {
+      text-decoration: underline;
+      line-height: 25px;
+      text-align: center;
+   }
+
+   .portimg {
+      margin-top: 70px;
+      margin-bottom: 40px;
+
+      @include sm {
+         margin-top: 60px;
+         margin-bottom: 30px;
+      }
+   }
+}
+
+.footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   .footer__title {
+      margin-bottom: 20px;
+   }
+
+   .footer__text {
+      text-align: center;
+      margin-bottom: 50px;
+   }
+
+   .footer__btn {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: #FFFFFF;
+      width: 180px;
+      height: 44px;
+      background: #070707;
+      border-radius: 22px;
+      cursor: pointer;
+      margin-bottom: 30px;
+
+      &:hover {
+         transform: scale(1.1);
+      }
+   }
+
+   .footer_socails {
+      width: 310px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+   }
+
+   .footer__text {
+      @include font(14px, 400px, $cllight);
+   }
+
+
+}
