@@ -2,3 +2,62 @@
 @import "./variables";
 @import "./mixins";
 @import "./responsive";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+@mixin font( $fs , $fw, $color){
+   font-family: 'Open Sans', sans-serif;
+   font-size: $fs;
+   font-weight: $fw;
+   color: $color;
+}
+
+.wrapper{
+   max-width: 970px;
+   margin: 0 auto;
+   @include lg{
+      padding-left: 30px;
+      padding-right: 30px;
+   }
+   @include md{
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+}
+
+.header{
+   height: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-bottom: 1px solid $cllight;
+   @include sm{
+      padding-top: 30px;
+      padding-bottom: 30px;
+      height: auto;
+   }
+   .nav{
+      display: flex;
+      gap:40px;
+      @include sm{
+         flex-direction: column;
+      }
+      .nav__item{
+         @include font(18px, 400px, $cllight);
+         a{
+            text-decoration:none;
+            color: $cllight;
+            &:hover{
+               color: $cldark;
+            }
+         }
+      }
+   }
+}
+
+.image{
+   width: 100%;
+   height: auto;
+}
+
