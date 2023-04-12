@@ -200,6 +200,41 @@
 І так до тих пір, поки користувач не вибере == N (буде корисним почитати про алгоритм: "бінарний пошук").
  */
 
-let N = 0;
-let userNum = 0;
+// let min = 0;
+// let max = 100;
+// let N = Math.floor((min+max)/2);
+// let answer;
+
+// do{
+//    answer = prompt(`ваше число > ${N} , чи < ${N} чи = ${N}`)
+//    if(answer == '>'){
+//       min = N;
+//    } else if(answer == '<'){
+//       max= N;
+//    } 
+//    N = Math.floor((min+max)/2);
+// }while(answer !== "=");
+
+// alert(`Ваше число ${N}`);
+
+//Виведи таблицю множення для всіх чисел від 2 до 9. Кожне число необхідно помножити на числа від 1 до 10.
+
+// let arrNum = [2, 3, 4, 5, 6, 7, 8, 9]
+// for (let index = 0; index < 8; index++) {
+//    const numMulti = arrNum[index];
+//    for(let j = 1; j < 11; j++){
+//       arrNum[index] = numMulti  * j;
+//       // alert(arrNum[index]);
+//       console.log(arrNum[index]);
+//    }  
+// }
+
+
+/**
+ * Запитай дату (день, місяць, рік) і виведи наступну за нею дату. 
+ * Враховуй можливість переходу на наступний місяць, рік, а також високосний рік.
+ */
+
+
+
 
