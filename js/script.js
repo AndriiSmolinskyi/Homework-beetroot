@@ -157,7 +157,22 @@ const fractionMethods = {
       }
       let commonDeminator = (fractionFirst.y*fractionSecond.y) /nsd;
       console.log(commonDeminator);
-      
+      let temp1x = 0;
+      let temp2x = 0;
+      for (let index = fractionFirst.y; index >= 1; index--) {
+         if(commonDeminator % index == 0  && index*fractionFirst.y==commonDeminator){
+            temp1x = index;   
+         }
+      }
+      console.log(temp1x);
+      for (let index = fractionSecond.y; index >= 1; index--) {
+         if(commonDeminator % index == 0  && index*fractionSecond.y==commonDeminator){
+            temp2x = index;   
+         }
+      }
+      console.log(temp2x);
+      let result = (fractionFirst.x * temp1x) + (fractionSecond.x*temp2x);
+      console.log(`${result}\n--\n${commonDeminator}`);
    }
 
    
