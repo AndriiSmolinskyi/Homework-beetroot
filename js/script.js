@@ -71,18 +71,100 @@ console.log(car. necessaryTime(1000));
 
 
 const dateUser = {
-   hours: 20,
-   minutes: 30,
-   seconds: 30,
+   hours: 0,
+   minutes: 0,
+   seconds: 0,
 
    info: function(){
-      console.log(`${this.hours}:${this.minutes}:${this.seconds}`);
+      console.log(`${this.hours.toString().padStart(2, "0")}:${this.minutes.toString().padStart(2, "0")}:${this.seconds.toString().padStart(2, "0")}`);
+   },
+   
+   plusSeconds: function (sec){
+      this.seconds = this.seconds + sec;
+      if(this.seconds>=60){
+         this.minutes = Math.floor(this.seconds/60)
+         this.seconds = this.seconds % 60;         
+         if(this.minutes >= 60){
+            this.hours = Math.floor(this.minutes/60)
+            this.minutes = this.minutes % 60; 
+            if(this.hours >= 24){
+               this.hours = Math.floor(this.hours%24)
+            }
+         }
+      }
+   },
+
+   plusMinutes: function(min){
+      this.minutes = min;
+      if(this.minutes >= 60){
+         this.hours = Math.floor(this.minutes/60)
+         this.minutes = this.minutes % 60; 
+         if(this.hours >= 24){
+            this.hours = Math.floor(this.hours%24)
+         }
+      }
+   },
+
+   plusHour: function(time){
+      this.hours = time;
+      if(this.hours >= 24){
+         this.hours = Math.floor(this.hours%24)
+      }
    }
+  
    
 }
 
-dateUser.info()
+Number(dateUser.plusSeconds(126534));
+dateUser.info();
+Number(dateUser.plusMinutes(375));
+dateUser.info();
+Number(dateUser.plusHour(172));
+dateUser.info();
 
+
+
+/**
+Створи об'єкт, що описує звичайний дріб. Створи об'єкт, який має методи роботи з дробом:
+Складання 2-х об'єктів-дробів.
+Віднімання 2-х об'єктів-дробів.
+Множення 2-х об'єктів-дробів.
+Ділення 2-х об'єктів-дробів.
+Скорочення об'єкта-дробу.
+ */
+
+
+const fractionFirst = {
+   x : 7,
+   y: 10,
+
+}
+
+const fractionSecond = {
+   x : 5,
+   y: 8,
+
+}
+
+const fractionMethods = {
+   //(знаменник першого дробу * знаменник другого дробу) / НСД (знаменник першого дробу, знаменник другого дробу)
+   add: function(frac1, frac2){
+      let nsd = 0;
+      for (let index = 0; index < fractionFirst.y && fractionSecond.y; index++) {
+         if(fractionFirst.y%index==0 && fractionSecond.y%index==0){
+            nsd = index;   
+         }
+      }
+      let commonDeminator = (fractionFirst.y*fractionSecond.y) /nsd;
+      console.log(commonDeminator);
+      
+   }
+
+   
+
+}
+
+fractionMethods.add();
 
 
 
