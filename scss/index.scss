@@ -2,3 +2,12 @@
 @import "./variables";
 @import "./mixins";
 @import "./responsive";
+
+.modal__window{
+   width: 100px;
+   height: 100px;
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   background-color: antiquewhite;
+}
