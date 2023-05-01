@@ -20,18 +20,23 @@ document.addEventListener("keydown", (event) => {
     divBlock.style.display = "none";
   }
   if (event.ctrlKey && event.key === "i") {
-    text = textAreaBlock.value; 
+    text = textAreaBlock.value;
     divBlock.innerText = text;
     textAreaBlock.style.display = "none";
     divBlock.style.display = "block";
   }
 });
-
+console.log(1)
 /*
 Створити HTML-сторінку з великою таблицею. При кліку на заголовок стовпця, необхідно відсортувати дані цього стовпця.
 , Врахуй, що числові значення повинні сортуватися як числа, а не як рядки.
 */
 
+// const table = document.querySelector('table');
+// const headerTable = table.querySelectorAll('th');
+// console.log(table);
 
-
+const table = document.querySelector('table');
+const headers = table.querySelectorAll('th');
+  
 
