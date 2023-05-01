@@ -4,3 +4,14 @@
 @import "./responsive";
 
 
+.container, textarea{
+   width: 300px;
+   height: 200px;
+   border: 2px solid black;
+}
+
+
+textarea{
+   display: none;
+	border: 1px solid red;
+}
