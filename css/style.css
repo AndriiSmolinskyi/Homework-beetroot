@@ -5,7 +5,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -323,20 +322,22 @@ body {
 }
 
 .content {
+  margin: auto;
+  padding: 30px;
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
+  max-width: 600px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h3 {
   background: #fff;
   color: #3498db;
   font-size: 36px;
-  height: 417px;
+  line-height: 100px;
+  margin: 10px;
+  padding: 2%;
   position: relative;
   text-align: center;
-  width: 220px;
-  margin-left: 30px;
-  margin-right: 30px;
 }
 /*# sourceMappingURL=style.css.map */

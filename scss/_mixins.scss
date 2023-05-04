@@ -1,8 +1,8 @@
 @use "./variables";
 
 @mixin borderWithBackground($bgColor) {
-    border: 1px solid $color-red;
-    background-color: $bgColor;
+  border: 1px solid $color-red;
+  background-color: $bgColor;
 }
 
 @mixin blockFonts($size, $color, $family) {
@@ -22,3 +22,70 @@
   }
 
 }
+
+
+@mixin fontFamily {
+  font-family: 'Montserrat';
+  font-style: normal;
+}
+
+@mixin fontWeight700 {
+  font-weight: 700px
+}
+
+@mixin fontWeight500 {
+  font-weight: 500px;
+}
+
+@mixin h1 {
+  @include fontFamily;
+  @include fontWeight700;
+  font-size: 50px;
+  line-height: 61px;
+  text-transform: uppercase;
+}
+
+@mixin h2 {
+  @include fontFamily;
+  @include fontWeight700;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+
+@mixin h2 {
+  @include fontFamily;
+  @include fontWeight700;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+
+@mixin menu {
+  @include fontFamily;
+  @include fontWeight500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin prodName {
+  @include fontFamily;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin price {
+  @include fontFamily;
+  @include fontWeight700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@mixin button-text {
+  @include fontFamily;
+  @include fontWeight500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
