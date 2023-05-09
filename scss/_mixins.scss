@@ -53,13 +53,6 @@
   text-transform: uppercase;
 }
 
-@mixin h2 {
-  @include fontFamily;
-  @include fontWeight700;
-  font-size: 32px;
-  line-height: 39px;
-  text-transform: uppercase;
-}
 
 @mixin menu {
   @include fontFamily;
@@ -87,5 +80,18 @@
   @include fontWeight500;
   font-size: 18px;
   line-height: 22px;
+  text-transform: uppercase;
 }
 
+@mixin button {
+  width: 227px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @include button-text;
+  color: white;
+  border: 2px solid $brown-light;
+  cursor: pointer;
+}
