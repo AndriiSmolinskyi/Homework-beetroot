@@ -11,6 +11,7 @@
 .button:hover{
   background-color: $tomato-light;
   border: 0px;
+  color: white;
 }
 
 .header-bg{
@@ -54,6 +55,7 @@
 
 .slider-back{
   position: relative;
+  
 
   .slick-prev, .slick-next {
     display: none !important;
@@ -113,5 +115,98 @@
   .slider-back__3{
     background-image: url('img/firstsec/imagethird.svg');
   }
+
+  .slider-back__content{
+    max-width: 1400px;
+    padding-top: 120px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 auto;
+
+    .template{
+      display: flex;
+      flex-direction: column;
+      align-items: center
+    }
+    
+    .slider-back__content__title{
+      @include h1;
+      color: $brown-light;
+      max-width: 400px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.products{
+  margin: 0px auto;
+  margin-top: 70px;
+  max-width: 1320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .products__title{
+    @include h2;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .products__list{
+    .products__list__item{
+      width: 224px;
+      height: 437px;
+      border: 1px solid $brown-light;
+      margin: 10px;
+      cursor: pointer;
+
+      .products__item__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .products__item__status{
+        width: 60px;
+        height: 20px;
+        background-color: $tomato-light;
+        @include button-text;
+        font-size: 10px;
+        text-align: center;
+        color: $brown-light;
+      }
+      .products__card__img{
+        margin-bottom: 18px;
+      }
+      .products__card__par{
+        @include prodName;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 10px;      
+      }
+      .products__card__price{
+        @include price;
+        text-align: center;
+      }
+    }
+  }
+
+  .products__list__item:hover{
+    border: 1px solid $tomato-light;
+  }
+
+  .products__btn{
+    color: $black;
+    border: 1px solid $black;
+    margin-top: 50px;
+  }
+
+  .products__btn:hover{
+    color: white;
+    border: 0px;
+  }
+  
 }
 

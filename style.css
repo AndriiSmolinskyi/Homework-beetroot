@@ -349,7 +349,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
           align-items: center;
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
@@ -362,6 +362,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .button:hover {
   background-color: #F16A50;
   border: 0px;
+  color: white;
 }
 
 .header-bg {
@@ -398,7 +399,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   width: 90px;
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   display: -webkit-box;
@@ -481,5 +482,137 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 .slider-back .slider-back__3 {
   background-image: url("img/firstsec/imagethird.svg");
+}
+.slider-back .slider-back__content {
+  max-width: 1400px;
+  padding-top: 120px;
+  padding-right: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0 auto;
+}
+.slider-back .slider-back__content .template {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slider-back .slider-back__content .slider-back__content__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  text-transform: uppercase;
+  color: #F8F1EA;
+  max-width: 400px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.products {
+  margin: 0px auto;
+  margin-top: 70px;
+  max-width: 1320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.products .products__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.products .products__list .products__list__item {
+  width: 224px;
+  height: 437px;
+  border: 1px solid #F8F1EA;
+  margin: 10px;
+  cursor: pointer;
+}
+.products .products__list .products__list__item .products__item__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.products .products__list .products__list__item .products__item__status {
+  width: 60px;
+  height: 20px;
+  background-color: #F16A50;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: center;
+  color: #F8F1EA;
+}
+.products .products__list .products__list__item .products__card__img {
+  margin-bottom: 18px;
+}
+.products .products__list .products__list__item .products__card__par {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.products .products__list .products__list__item .products__card__price {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+.products .products__list__item:hover {
+  border: 1px solid #F16A50;
+}
+.products .products__btn {
+  color: #000000;
+  border: 1px solid #000000;
+  margin-top: 50px;
+}
+.products .products__btn:hover {
+  color: white;
+  border: 0px;
 }
 /*# sourceMappingURL=style.css.map */
