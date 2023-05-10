@@ -429,7 +429,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .slider-back {
   position: relative;
 }
-.slider-back .slick-prev, .slider-back .slick-next {
+.slider-back .slick-prev,
+.slider-back .slick-next {
   display: none !important;
 }
 .slider-back .slick-dots {

@@ -3,22 +3,23 @@
 @import "./mixins";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 
-.button{
+.button {
   @include button;
   background-color: transparent;
 }
 
-.button:hover{
+.button:hover {
   background-color: $tomato-light;
   border: 0px;
   color: white;
 }
 
-.header-bg{
+.header-bg {
   width: 100%;
   background-color: $brown-light;
 }
-.header{
+
+.header {
   max-width: 1400px;
   padding-left: 100px;
   padding-right: 100px;
@@ -28,9 +29,11 @@
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  .header__menu{
+
+  .header__menu {
     display: flex;
-    .header__menu__item{
+
+    .header__menu__item {
       width: 90px;
       @include menu;
       display: flex;
@@ -38,34 +41,35 @@
       height: 80px;
       align-items: center;
       cursor: pointer;
-      
+
     }
   }
 
-  .header__icons{
+  .header__icons {
     display: flex;
     gap: 30px;
     color: black;
   }
 }
 
-.header__menu__item:hover{
+.header__menu__item:hover {
   background-color: $tomato-light;
 }
 
-.slider-back{
+.slider-back {
   position: relative;
-  
 
-  .slick-prev, .slick-next {
+
+  .slick-prev,
+  .slick-next {
     display: none !important;
   }
 
   .slick-dots {
     text-align: center;
-    display: flex; 
-    justify-content: center; 
-    list-style: none; 
+    display: flex;
+    justify-content: center;
+    list-style: none;
     position: absolute;
     bottom: 50px;
     gap: 30px;
@@ -73,12 +77,12 @@
   }
 
   .slick-dots button {
-    background: $dot-inactive; 
-    border: none; 
-    border-radius: 50%; 
-    height: 20px; 
-    width: 20px; 
-    outline: none; 
+    background: $dot-inactive;
+    border: none;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    outline: none;
   }
 
   .slick-dots li[class="slick-active"] button {
@@ -88,35 +92,37 @@
   .slick-dots li {
     display: inline-block;
   }
-  
+
   .slick-dots li button:before {
     display: none;
   }
-  
+
   .slick-dots li button:focus:before,
   .slick-dots li button:hover:before {
     display: none;
   }
 
-  .slider-back-tog{
+  .slider-back-tog {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: 700px;
   }
-  
-  .slider-back__1{
-    background-image: url('img/firstsec/imagefirst.svg');  
+
+  .slider-back__1 {
+    background-image: url('img/firstsec/imagefirst.svg');
   }
-  .slider-back__2{
+
+  .slider-back__2 {
     background-image: url('img/firstsec/imagesecond.svg');
   }
-  .slider-back__3{
+
+  .slider-back__3 {
     background-image: url('img/firstsec/imagethird.svg');
   }
 
-  .slider-back__content{
+  .slider-back__content {
     max-width: 1400px;
     padding-top: 120px;
     padding-right: 100px;
@@ -125,13 +131,13 @@
     align-items: flex-end;
     margin: 0 auto;
 
-    .template{
+    .template {
       display: flex;
       flex-direction: column;
       align-items: center
     }
-    
-    .slider-back__content__title{
+
+    .slider-back__content__title {
       @include h1;
       color: $brown-light;
       max-width: 400px;
@@ -141,34 +147,35 @@
   }
 }
 
-.products{
+.products {
   margin: 0px auto;
   margin-top: 70px;
   max-width: 1320px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  .products__title{
+
+  .products__title {
     @include h2;
     margin-bottom: 50px;
     text-align: center;
   }
 
-  .products__list{
-    .products__list__item{
+  .products__list {
+    .products__list__item {
       width: 224px;
       height: 437px;
       border: 1px solid $brown-light;
       margin: 10px;
       cursor: pointer;
 
-      .products__item__card{
+      .products__item__card {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
-      .products__item__status{
+
+      .products__item__status {
         width: 60px;
         height: 20px;
         background-color: $tomato-light;
@@ -177,36 +184,38 @@
         text-align: center;
         color: $brown-light;
       }
-      .products__card__img{
+
+      .products__card__img {
         margin-bottom: 18px;
       }
-      .products__card__par{
+
+      .products__card__par {
         @include prodName;
         font-size: 16px;
         text-align: center;
-        margin-bottom: 10px;      
+        margin-bottom: 10px;
       }
-      .products__card__price{
+
+      .products__card__price {
         @include price;
         text-align: center;
       }
     }
   }
 
-  .products__list__item:hover{
+  .products__list__item:hover {
     border: 1px solid $tomato-light;
   }
 
-  .products__btn{
+  .products__btn {
     color: $black;
     border: 1px solid $black;
     margin-top: 50px;
   }
 
-  .products__btn:hover{
+  .products__btn:hover {
     color: white;
     border: 0px;
   }
-  
-}
 
+}
