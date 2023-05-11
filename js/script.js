@@ -60,5 +60,11 @@ dot5.addEventListener('click', (event) =>{
   headerBg.style.backgroundImage = 'url("/img/tu-tram-pham-202263\ 11234.png"), linear-gradient(90deg, rgba(241, 237, 94, 1) 25%, rgba(89, 177, 226, 1) 74%)';
 });
 
-
+$(".autoplay").slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+});
 

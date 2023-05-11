@@ -3,6 +3,7 @@
 @import "./mixins";
 @import "./responsive";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 // .first-slider {
 //    .gradient {
@@ -66,7 +67,7 @@
 //    }
 // }
 
-.bg{
+.bg {
    width: 100%;
    height: 100vh;
    background-image: url("/img/tu-tram-pham-202263\ 11234.png"), linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
@@ -76,21 +77,21 @@
    background-repeat: no-repeat;
 }
 
-.first-slider{
+.first-slider {
    position: relative;
    max-width: 1600px;
    margin: 0 auto;
 
-   .dots-block{
+   .dots-block {
       position: absolute;
       right: 50px;
       top: 35%;
       display: flex;
       flex-direction: column;
-      gap:30px;
+      gap: 30px;
    }
-   
-   .dot{
+
+   .dot {
       cursor: pointer;
       display: inline-block;
       width: 10px;
@@ -100,7 +101,7 @@
       right: 50px;
    }
 
-   .dot-1{
+   .dot-1 {
       background-color: $white;
    }
 }
@@ -111,7 +112,7 @@
 }
 
 .header {
-   
+
    .navigation {
       display: flex;
       height: 54px;
@@ -165,8 +166,9 @@
             }
          }
 
-         .navigation__contact__item:hover{
+         .navigation__contact__item:hover {
             background-color: $white;
+
             .item-contact {
                font-size: 16px;
                color: purple;
@@ -207,11 +209,278 @@
          }
       }
 
+      .header__block__arrow:hover {
+         transform: scale(1.1);
+         background-color: $white;
+
+         .header-arrow {
+            color: purple;
+         }
+      }
+
    }
 
 }
 
 
+.title-h2 {
+   @include monserat700(44px, $mainText);
+   line-height: 54px;
+}
+
+.what {
+   padding-top: 100px;
+   padding-bottom: 150px;
+
+   .what__title {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 147px;
+
+      .what__title__line {
+         width: 100px;
+         background-color: $mainText;
+         height: 1px;
+         margin-bottom: 30px;
+      }
+   }
+
+   .sub {
+      @include monserat400(22px, $mainText);
+      line-height: 27px;
+   }
+
+   .par {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 19px;
+      margin-bottom: 40px;
+      color: $mainText;
+      max-width: 470px;
+   }
+
+   .btn {
+      margin-bottom: 60px;
+   }
+
+   .adress {
+      font-family: 'Open Sans';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      color: $mainText;
+      cursor: pointer;
+   }
+
+   .artic {
+      display: flex;
+      flex-direction: row;
+      gap: 70px;
+   }
+
+   .what__article {
+      display: flex;
+      flex-direction: column;
+      gap: 177px;
+   }
+
+   .what__article__ar1 {
+      .ar1__left {
+         position: relative;
+         z-index: 1;
+         width: 630px;
+         height: 470px;
+      }
+
+      .ar1__left::before {
+         content: "";
+         position: absolute;
+         z-index: -1;
+         bottom: 57px;
+         right: 220px;
+         width: 585px;
+         height: 470px;
+         background-color: #55B7FF;
+      }
+
+      .ar1__right {
+         margin-top: 97px;
+      }
+   }
+
+
+   .what__article__ar2 {
+      .ar2__left {
+         margin-top: 97px;
+      }
+
+      .ar2__right {
+         position: relative;
+         z-index: 1;
+         width: 630px;
+         height: 470px;
+      }
+
+      .ar2__right::before {
+         content: "";
+         position: absolute;
+         z-index: -1;
+         bottom: 57px;
+         left: 219px;
+         width: 585px;
+         height: 470px;
+         background-color: #7E5AFF;
+         ;
+      }
+   }
+
+}
+
+.btn {
+   @include button;
+   color: $mainText;
+}
+
+.btn:hover {
+   background-color: $mainText;
+   color: $white;
+}
 
 
 
+.bg-news {
+   background-image: url(/img/city\ 2\ @2x\ 1city.png), linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+   ;
+   width: 100%;
+   height: auto;
+   padding-bottom: 120px;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-top: 120px;
+}
+
+.news {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   .news__title {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .news__title__line {
+         width: 100px;
+         background-color: $white;
+         height: 1px;
+         margin-bottom: 30px;
+      }
+
+      .news__title__title {
+         margin-bottom: 90px;
+         font-family: 'Montserrat';
+         font-style: normal;
+         font-weight: 700;
+         font-size: 44px;
+         color: $white;
+      }
+   }
+
+   .content {
+      margin: auto;
+      width: 100%;
+      box-sizing: border-box;
+   }
+
+   .block-slider {
+      background: $white;
+      color: #3498db;
+      font-size: 36px;
+      line-height: 100px;
+      margin-right: 10px;
+      margin-left: 10px;
+      height: 514px;
+      margin-bottom: 40px;
+
+      .img-news {
+         width: 100%;
+         height: 240px;
+      }
+
+      .block-slider__blog {
+         margin: 30px 20px 40px 20px;
+
+         .block-slider__blog__title {
+            line-height: 27px;
+            @include monserat700(22px, $mainText);
+            margin-bottom: 15px;
+            
+         }
+
+         .block-slider__blog__text {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: $mainText;
+         }
+      }
+
+      .block-slider__author{
+         height: 60px;
+         margin-left: 20px;
+         margin-right: 20px;
+         display: flex;
+         align-items: center;
+         .author__img{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            margin-right: 20px;
+         }
+
+         .block-slider__author__article{
+            .name__author{
+               @include monserat400(18px, $mainText);
+               line-height: 22px;
+            }
+            .date__author{
+               @include monserat400(14px, #55B7FF);
+               line-height: 17px;
+            }
+         }
+      }
+
+   }
+
+   .slick-dots {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+   }
+
+   .slick-dots li.slick-active button:before {
+      background-color: $white;
+   }
+
+   .slick-dots li button:before {
+      font-family: none;
+      height: 10px;
+      width: 10px;
+      border: 1px solid $white;
+      border-radius: 50%;
+      opacity: 1;
+      color: transparent;
+      display: flex;
+   }
+
+
+}
