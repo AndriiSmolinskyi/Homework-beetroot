@@ -16,3 +16,16 @@
 
 }
 
+@mixin monserat700($fs, $fc){
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: $fs;
+  color: $fc;
+}
+
+@mixin monserat400($fs, $fc){
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: $fs;
+  color: $fc;
+}

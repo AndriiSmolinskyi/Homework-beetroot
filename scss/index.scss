@@ -2,11 +2,11 @@
 @import "./variables";
 @import "./mixins";
 @import "./responsive";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 
-
-.first-slider{
-   .gradient{
+.first-slider {
+   .gradient {
       background-image: url("/img/tu-tram-pham-202263\ 11234.png");
       width: 100%;
       height: 100vh;
@@ -16,66 +16,67 @@
       opacity: 0.6;
    }
 
-   .slick-prev, .slick-next {
+   .slick-prev,
+   .slick-next {
       display: none !important;
-    }
+   }
 
-   .bg-block{
+   .bg-block {
       background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
    }
-   
-   .bg-block1{
-      background: linear-gradient(90deg, rgba(235,231,105,1) 0%, rgba(226,89,225,1) 80%);
+
+   .bg-block1 {
+      background: linear-gradient(90deg, rgba(235, 231, 105, 1) 0%, rgba(226, 89, 225, 1) 80%);
    }
-   
-   .bg-block2{
-      background: linear-gradient(90deg, rgba(217,233,99,1) 8%, rgba(89,170,226,1) 70%);
+
+   .bg-block2 {
+      background: linear-gradient(90deg, rgba(217, 233, 99, 1) 8%, rgba(89, 170, 226, 1) 70%);
    }
-   
-   .bg-block3{
-      background: linear-gradient(90deg, rgba(99,233,119,1) 13%, rgba(89,177,226,1) 54%);
+
+   .bg-block3 {
+      background: linear-gradient(90deg, rgba(99, 233, 119, 1) 13%, rgba(89, 177, 226, 1) 54%);
    }
-   
-   .bg-block4{
-      background: linear-gradient(90deg, rgba(241,237,94,1) 25%, rgba(89,177,226,1) 74%);
+
+   .bg-block4 {
+      background: linear-gradient(90deg, rgba(241, 237, 94, 1) 25%, rgba(89, 177, 226, 1) 74%);
    }
-   
+
    .slick-dots {
       text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-end; 
+      align-items: flex-end;
       list-style: none;
       position: absolute;
-      bottom: 40%;
+      bottom: 35%;
       right: 50px;
       gap: 30px;
       z-index: 999;
-    }
-    
-    .slick-dots button {
+   }
+
+   .slick-dots button {
       background: transparent;
       border: 2px solid white;
       border-radius: 50%;
       height: 10px;
       width: 10px;
       outline: none;
-    }
-    
-    .slick-dots li {
+   }
+
+   .slick-dots li {
       display: inline-block;
-    }
-    
-    .slick-dots li button:before {
+   }
+
+   .slick-dots li button:before {
       display: none;
-    }
-    
-    .slick-dots li[class="slick-active"] button {
+   }
+
+   .slick-dots li[class="slick-active"] button {
       background: white;
-    }
-    
-    .slick-dots li button:not([class="slick-active"]):before {
+   }
+
+   .slick-dots li button:not([class="slick-active"]):before {
       content: "";
       display: block;
       position: absolute;
@@ -86,13 +87,117 @@
       border: 2px solid white;
       border-radius: 50%;
       opacity: 0;
-    }
-    
-    .slick-dots li button:focus:before,
-    .slick-dots li button:hover:before {
-      display: none;
-    }
+   }
 
+   .slick-dots li button:focus:before,
+   .slick-dots li button:hover:before {
+      display: none;
+   }
 
 }
 
+.wrapper {
+   max-width: 1170px;
+   margin: 0 auto;
+}
+
+.header {
+   position: relative;
+   bottom: 720px;
+
+   .navigation {
+      display: flex;
+      height: 54px;
+      align-items: center;
+      justify-content: space-between;
+
+      .navigation__nav {
+         display: flex;
+         gap: 70px;
+
+         .navigation__nav__item {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: $white;
+            font-size: 14px;
+            font-weight: 400;
+         }
+
+         .navigation__nav__item:before {
+            content: "";
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            border: 1px solid $white;
+            border-radius: 50%;
+            margin-right: 14px;
+         }
+
+         .navigation__nav__item:hover:before {
+            background-color: $white;
+            border-color: $white;
+         }
+
+      }
+
+      .navigation__contact {
+         display: flex;
+         gap: 20px;
+
+         .navigation__contact__item {
+            display: inline-flex;
+            width: 40px;
+            height: 40px;
+            border: 1px solid $white;
+            border-radius: 50px;
+            align-items: center;
+            justify-content: center;
+
+            .item-contact {
+               font-size: 16px;
+               color: $white;
+            }
+         }
+      }
+   }
+
+   .header__block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .header__block__title {
+         @include monserat700(80px, $white);
+         letter-spacing: 0.1em;
+         margin-top: 223px;
+      }
+
+      .header__block__untitle {
+         @include monserat400(18px, $white);
+         letter-spacing: 0.3em;
+         margin-top: 20px;
+      }
+
+      .header__block__arrow {
+         height: 40px;
+         width: 40px;
+         border: 1px solid $white;
+         border-radius: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin-top: 240px;
+
+         .header-arrow {
+            color: $white;
+         }
+      }
+
+   }
+
+}
+
+// monserat700($fs, $fc)
+
+h2 {
+   color: black;
+}
