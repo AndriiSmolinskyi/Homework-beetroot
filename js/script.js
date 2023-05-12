@@ -68,3 +68,12 @@ $(".autoplay").slick({
   slidesToScroll: 1,
 });
 
+
+
+const photoProj = document.querySelectorAll('.gallery__block__item');
+const body = document.querySelector('body');
+console.log(photoProj);
+let temp = -1;
+photoProj.addEventListener('click', (event)=>{
+  
+})
