@@ -70,10 +70,17 @@ $(".autoplay").slick({
 
 
 
-const photoProj = document.querySelectorAll('.gallery__block__item');
-const body = document.querySelector('body');
-console.log(photoProj);
-let temp = -1;
-photoProj.addEventListener('click', (event)=>{
-  
-})
+const photoProj = document.querySelectorAll('.gallery__block__item img');
+const visibility = document.querySelector('.visibility');
+const visibilityImg = visibility.querySelector('img');
+
+for (let i = 0; i < photoProj.length; i++) {
+  photoProj[i].addEventListener('click', function() {
+    visibilityImg.src = this.src;
+    visibility.style.display = 'flex';
+  });
+}
+
+visibility.addEventListener('click', function() {
+  visibility.style.display = 'none';
+});
