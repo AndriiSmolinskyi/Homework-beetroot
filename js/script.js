@@ -259,3 +259,6 @@ function initMap() {
     icon: "/img/map/Pinpin.svg", // шлях до застилізованого маркера
   });
 }
+
+
+

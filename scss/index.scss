@@ -450,6 +450,14 @@
       }
    }
 
+   .lupa{
+      position: absolute;
+      z-index: 2;
+      left: 270px;
+      top:184px;
+      cursor: pointer;
+   }
+
    .gallery__block {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -457,6 +465,7 @@
       grid-column-gap: 10px;
       grid-row-gap: 5px;
       margin-bottom: 60px;
+      position: relative;
 
       .gallery__block__item {
          cursor: pointer;
