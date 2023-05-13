@@ -86,7 +86,7 @@
 
       }
 
-      
+
    }
 
    .header__block {
@@ -138,7 +138,7 @@
    display: flex;
    gap: 20px;
 
-   .soc-block-item{
+   .soc-block-item {
       display: inline-flex;
       width: 40px;
       height: 40px;
@@ -446,7 +446,7 @@
          width: 100px;
          height: 1px;
          background-color: $mainText;
-         margin-bottom: 30px; 
+         margin-bottom: 30px;
       }
    }
 
@@ -516,17 +516,17 @@
 #map {
    height: 700px;
    width: 100%;
- }
+}
 
-.gmnoprint{
+.gmnoprint {
    display: none;
 }
 
-.position-block{
+.position-block {
    position: relative;
 }
 
-.cont{
+.cont {
    background-image: url('/img/map/city@2x\ 1back-form.png'), linear-gradient(#ffff);
    max-width: 770px;
    height: 450px;
@@ -541,13 +541,15 @@
    left: 0;
    right: 0;
    bottom: 400px;
-   .cont__title{
+
+   .cont__title {
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-bottom: 40px;
-      .cont__title__line{
+
+      .cont__title__line {
          width: 100px;
          height: 1px;
          background-color: $mainText;
@@ -555,16 +557,18 @@
       }
    }
 
-   .cont__content{
+   .cont__content {
       display: flex;
       flex-direction: row;
       gap: 54px;
-      .cont__contact{
+
+      .cont__contact {
          max-width: 286px;
          display: flex;
          flex-direction: column;
          gap: 30px;
-         .cont__contact__item{
+
+         .cont__contact__item {
             font-family: 'Open Sans';
             font-weight: 400;
             font-size: 18px;
@@ -572,29 +576,34 @@
             color: $mainText;
             cursor: pointer;
          }
-         .cont-awes{
+
+         .cont-awes {
             color: #9932CC;
             margin-right: 10px;
          }
       }
-      .contact__form{
+
+      .contact__form {
          max-width: 310px;
          display: flex;
          flex-direction: column;
          gap: 30px;
          align-items: end;
-         .contact__form__item{
+
+         .contact__form__item {
             width: 310px;
             height: 41px;
             border-bottom: 1px solid lightgray;
             padding-top: 0px;
             padding-bottom: 14px;
          }
-         .contact__form__item:focus{
+
+         .contact__form__item:focus {
             @include monserat400(18px, black);
             border-bottom: 1px solid black;
          }
-         .contact__form__btn{
+
+         .contact__form__btn {
             width: 140px;
             cursor: pointer;
          }
@@ -604,22 +613,25 @@
 }
 
 
-.bg-footer{
+.bg-footer {
    background-image: url('/img/map/scott-webb-176434\ 2footer-back.png'), linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
    background-size: cover;
    background-position: center;
-   background-repeat: no-repeat;   
-   .footer{
+   background-repeat: no-repeat;
+
+   .footer {
       width: 770px;
       padding-top: 210px;
       padding-bottom: 230px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
-      .footer__credit__logo{
+
+      .footer__credit__logo {
          margin-bottom: 41px;
       }
-      .footer__credit__copy{
+
+      .footer__credit__copy {
          @include monserat400(14px, $white);
       }
    }
