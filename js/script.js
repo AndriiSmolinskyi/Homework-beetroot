@@ -36,7 +36,37 @@ console.log(1)
 // const headerTable = table.querySelectorAll('th');
 // console.log(table);
 
-const table = document.querySelector('table');
-const headers = table.querySelectorAll('th');
-  
 
+
+
+function sortTable(colIndex) {
+  var table = document.getElementById("myTable");
+  var rows = table.rows;
+  var switching = true;
+  var shouldSwitch;
+  var i;
+
+  while (switching) {
+    switching = false;
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      var x = rows[i].getElementsByTagName("td")[colIndex];
+      var y = rows[i + 1].getElementsByTagName("td")[colIndex];
+      if (isNaN(x.innerHTML)) {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch = true;
+          break;
+        }
+      } else {
+        if (Number(x.innerHTML) > Number(y.innerHTML)) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}

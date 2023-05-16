@@ -14,29 +14,29 @@
 <body>
     <div class="container"><div class="text-block ">Text</div></div>
     
-    <table id="my-table">
+    <table id="myTable">
         <thead>
           <tr>
-            <th data-column="1">Назва</th>
-            <th data-column="2">Кількість</th>
-            <th data-column="3">Ціна</th>
+            <th onclick="sortTable(0)">Name</th>
+            <th onclick="sortTable(1)">Age</th>
+            <th onclick="sortTable(2)">Country</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Товар 1</td>
-            <td>5</td>
-            <td>100</td>
+            <td>John</td>
+            <td>25</td>
+            <td>USA</td>
           </tr>
           <tr>
-            <td>Товар 2</td>
-            <td>10</td>
-            <td>50</td>
+            <td>Jane</td>
+            <td>30</td>
+            <td>Canada</td>
           </tr>
           <tr>
-            <td>Товар 3</td>
-            <td>2</td>
-            <td>200</td>
+            <td>Bob</td>
+            <td>20</td>
+            <td>UK</td>
           </tr>
         </tbody>
       </table>
