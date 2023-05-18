@@ -1,0 +1,11 @@
+@import "./reset";
+@import "./variables";
+@import "./mixins";
+@import "./responsive";
+
+.natashenka{
+   width: 500px;
+   height: 500px;
+   background-color: aquamarine;
+   color: red;
+}
