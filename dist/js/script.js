@@ -59,10 +59,38 @@ console.log(firstCircle.circleLength());
 
 class Marker{
 
-   constructor(){
-      
+   constructor(order, color, precent){
+      this.order = order;
+      this.color = color;
+      this.precent = precent;
    }
+
+   get markInfo(){
+      return this.order, this.color, this.precent;
+   }
+
+   set markInfo(markInfo){
+      [this.order, this.color, this.precent] = markInfo.split(' ');
+   }
+
+   markInfoWrite() {
+      const bodyJs = document.querySelector('body');
+      const marketText = document.createElement('span');
+      marketText.innerText = `Це ${this.order}ий маркер, його колір ${this.color} та він повний на ${this.precent}%!\n`;
+      marketText.style.color = this.color;
+      
+      for (let index = this.precent; index !== 0; index -= 0.5) {
+        const clonedMarketText = marketText.cloneNode(true);
+        bodyJs.appendChild(clonedMarketText);
+      }
+    }
 }
 
+const firstMarker = new Marker(1, 'blue', 10);
+console.log(firstMarker);
+firstMarker.markInfoWrite();
+firstMarker.markInfo = '1 red 2';
+console.log(firstMarker);
+firstMarker.markInfoWrite();
 
 
