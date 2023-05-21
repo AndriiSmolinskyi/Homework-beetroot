@@ -93,4 +93,20 @@ firstMarker.markInfo = '1 red 2';
 console.log(firstMarker);
 firstMarker.markInfoWrite();
 
+class RefillableMarker extends Marker{
+
+   // constructor(order, color, precent){
+   //    super(order, color, precent);
+   // }
+
+   refuel(fuelPrompt){
+      // const fuelPrompt = prompt('Введіть до 100');
+      this.precent = fuelPrompt;
+   }
+}
+
+const secondMarker = new RefillableMarker(2, 'grey', 2);
+console.log(secondMarker);
+secondMarker.refuel(5);
+secondMarker.markInfoWrite();
 
