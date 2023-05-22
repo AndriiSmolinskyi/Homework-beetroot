@@ -29,6 +29,9 @@ gulp.task("serve", function () {
     server: {
       baseDir: "./",
     },
+    files: [
+      "dist/js/**/*.js", // Додайте шлях до вашого JavaScript-файлу або каталогу
+    ],
   });
 
   gulp.watch("src/scss/**/*.scss", gulp.series("sass", "minify-css"));
@@ -36,4 +39,5 @@ gulp.task("serve", function () {
 });
 
 // Запуск задачі за замовчуванням (sass, minify-css, serve)
+gulp.task("default", gulp.series("sass", "minify-css", "serve"));
 gulp.task("default", gulp.series("sass", "minify-css", "serve"));
