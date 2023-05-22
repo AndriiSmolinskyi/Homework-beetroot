@@ -110,3 +110,63 @@ console.log(secondMarker);
 secondMarker.refuel(5);
 secondMarker.markInfoWrite();
 
+// Реалізуй клас Employee, що описує працівника, і створи масив працівників банку.
+// Реалізуй клас EmpTable для генерації HTML-коду таблиці зі списком працівників банку. 
+// Масив працівників необхідно передавати через конструктор, а отримувати HTML-код за допомогою методу getHtml ().
+// Створи об’єкт класу EmpTable і виведи на екран результат роботи методу getHtml ().
+
+
+class Employee{
+
+   constructor(name, position, salary){
+      this.name = name;
+      this.position = position;
+      this.salary = salary;
+   }
+}
+
+class EmpTable{
+   constructor(workers){
+      this.workers = workers;
+   }
+
+   getHTML(){
+      const table = document.createElement('table');
+      const tr = document.createElement('tr');
+      const thName = document.createElement('th');
+      thName.innerText = 'name';
+      table.appendChild(thName);
+      const thPos = document.createElement('th');
+      thPos.innerText = 'position';
+      table.appendChild(thPos);
+      const thSalary = document.createElement('th');
+      thSalary.innerText = 'salary';
+      table.appendChild(thSalary);
+      const td = document.createElement('td')
+      for (let index = 0; index < workers.length; index++) {
+         const trCopy = tr.cloneNode(true);
+         const tdCopy1 = td.cloneNode(true);
+         const tdCopy2 = td.cloneNode(true);
+         const tdCopy3 = td.cloneNode(true);
+         const workersArray = workers[index];
+         tdCopy1.textContent = workersArray.name;
+         tdCopy2.textContent = workersArray.position;
+         tdCopy3.textContent = workersArray.salary;
+         trCopy.appendChild(tdCopy1);
+         trCopy.appendChild(tdCopy2);
+         trCopy.appendChild(tdCopy3);
+         table.appendChild(trCopy);
+      }
+      document.body.appendChild(table)
+   }
+}
+
+const workers = [
+   new Employee('John Doe', 'Manager', 17000),
+   new Employee('Jane Smith', 'Analyst', 17500),
+   new Employee('Mike Johnson', 'Developer', 24000),
+];
+
+console.log(workers);
+const newTable = new EmpTable(workers);
+newTable.getHTML();
