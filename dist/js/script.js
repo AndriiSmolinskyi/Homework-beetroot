@@ -18,10 +18,11 @@
 
 class User {
    static users = [];
-  constructor(name, password) {
+    constructor(name, role, password) {
     this.name = name;
     this.password = password;
-    this._role = "user";
+    this.role = role;
+    User.users.push(this);
   }
 
   get Name() {
@@ -29,7 +30,7 @@ class User {
   }
 
   get Role() {
-    return this._role;
+    return this.role;
   }
 
   login() {
@@ -66,14 +67,39 @@ class User {
 }
 
 class Admin extends User {
-  constructor(name, password) {
-    super(name, password);
-    this._role = "admin";
+  constructor(name, role, password) {
+    super(name, role, password);
+    this.role = 'admin';
   }
 
+  addUser(username, userrole, userpass) {
+    const newUser = new User(username, userrole, userpass);
+    console.log(newUser);
+  }
   
-  addUser(userid, usernam, userrole, userpass,){
-   
+  removeUser(id){
+    User.users.find((value, index, array) => {
+      if(index === id){
+        User.users.splice(index, 1);
+      }
+    })
+  }
+
+  changeUserRole(changedRole, id) {
+    const changedRol = changedRole;
+    User.users.forEach((user, index) => {
+      if (id === index) {
+        User.users[index].role = changedRol;
+        if(User.users[index].role == 'admin'){
+          User.users[index]= new Admin(User.users[index].name, User.users[index].role, User.users[index].password);
+          User.users.splice(index, 1);
+        }
+      }
+    });
+  }
+
+  getAllUsers(){
+    console.log(User.users);
   }
 }
 
@@ -81,12 +107,18 @@ class Admin extends User {
 const user1 = new User("Andrii", "user", "1234");
 const user2 = new User("Vasiliy", "user", "1234");
 const user3 = new User("Nataliya", "user", "1234");
-// user1.login();
 console.log(user1);
-// user1.changeName();
-// user1.changePass();
-// console.log(user1);
 const admin1 = new Admin("Bill", "admin", "1111");
 console.log(admin1);
+admin1.addUser("Bogdan", "user", "1234");
+admin1.addUser("Heroin", "user", "1234");
+admin1.getAllUsers();
+admin1.removeUser(0);
+admin1.getAllUsers();
+admin1.changeUserRole('admin', 0);
+admin1.getAllUsers();
+
+
+
 
 
