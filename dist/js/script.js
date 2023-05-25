@@ -149,6 +149,7 @@ const clockBlock = document.querySelector(".clock-block");
 const inputClock = document.querySelector(".clock-block__input");
 const btnClock = document.querySelector(".clock-block__btn");
 const clockWrapper = document.querySelector(".clock-wrapper");
+const valueInput = inputClock.value;
 
 class WorldClock {
   constructor(timezone) {
@@ -161,37 +162,52 @@ class WorldClock {
     clockItem.style.height = "auto";
     clockWrapper.appendChild(clockItem);
 
-    const clockCircle = document.createElement("div");
-    clockCircle.style.width = "156px";
-    clockCircle.style.height = "152px";
-    clockCircle.style.borderRadius = "50%";
-    clockCircle.style.backgroundColor = "#D9D9D9";
-    clockCircle.style.marginBottom = "24px";
-    clockItem.appendChild(clockCircle)
+    this.clockCircle = document.createElement("div");
+    this.clockCircle.style.width = "156px";
+    this.clockCircle.style.height = "152px";
+    this.clockCircle.style.borderRadius = "50%";
+    this.clockCircle.style.backgroundColor = "#D9D9D9";
+    this.clockCircle.style.marginBottom = "24px";
+    this.clockCircle.style.display = 'flex';
+    this.clockCircle.style.justifyContent = 'center';
+    this.clockCircle.style.alignItems = 'center';
+    clockItem.appendChild(this.clockCircle);
 
     const btnBlock = document.createElement("div");
     btnBlock.style.width = "100%";
     btnBlock.style.display = "flex";
-    btnBlock.style.justifyContent = "space between";
-    clockItem.appendChild(btnBlock)
-    
-    const btn1 = document.createElement("button");
+    btnBlock.style.justifyContent = "space-between";
+    clockItem.appendChild(btnBlock);
+
+    const btn1 = document.createElement("div");
     btn1.style.width = '35px';
     btn1.style.height = '26px';
-    btn1.style.color = '#A9FB58';
+    btn1.style.backgroundColor = '#A9FB58';
+    btn1.style.cursor = 'pointer';
     btnBlock.appendChild(btn1);
+    btn1.addEventListener('click', function() {
+      this.clockCircle.textContent = this.getCurrentDate();
+    }.bind(this));
 
-    const btn2 = document.createElement("button");
+    const btn2 = document.createElement("div");
     btn2.style.width = '35px';
     btn2.style.height = '26px';
-    btn2.style.color = '#000AFF';
+    btn2.style.backgroundColor = '#000AFF';
+    btn2.style.cursor = 'pointer';
     btnBlock.appendChild(btn2);
+    btn2.addEventListener('click', function() {
+        this.clockCircle.textContent = this.getCurrentDateTime();
+    }.bind(this));
 
-    const btn3 = document.createElement("button");
+    const btn3 = document.createElement("div");
     btn3.style.width = '35px';
     btn3.style.height = '26px';
-    btn3.style.color = '#FE0303';
+    btn3.style.backgroundColor = '#FE0303';
+    btn3.style.cursor = 'pointer';
     btnBlock.appendChild(btn3);
+    btn3.addEventListener('click', function() {
+      clockItem.remove();
+    }.bind(this));
   }
 
   getCurrentDate() {
@@ -206,10 +222,37 @@ class WorldClock {
     const currentTime = formatter.format(new Date());
 
     console.log(`Поточний час у ${this.timeZone}: ${currentTime}`);
+    return currentTime;
+  }
+
+  getCurrentDateTime(){
+    const options = {
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
+      timeZone: this.timeZone,
+    };
+
+    const formatter = new Intl.DateTimeFormat("default", options);
+    const currentTime = formatter.format(new Date());
+
+    console.log(`Поточний час у ${this.timeZone}: ${currentTime}`);
+    return currentTime;
   }
 }
 
-// Приклад виклику функції для часового поясу "Europe/Kiev"
-const Kiyv = new WorldClock("Europe/Kiev");
-Kiyv.getCurrentDate();
-Kiyv.createClock();
+btnClock.addEventListener('click', event => {
+  const valueInput = inputClock.value.trim();
+  const newClock = new WorldClock(valueInput);
+  newClock.createClock();
+});
+
+// const Kiev = new WorldClock("Europe/Kiev");
+// Kiev.createClock();
+// Kiev.getCurrentDate();
+// const London = new WorldClock("Europe/London");
+// London.createClock();
+// London.getCurrentDate();
