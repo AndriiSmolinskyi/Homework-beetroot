@@ -159,6 +159,7 @@ class WorldClock {
     const clockItem = document.createElement("div");
     clockItem.style.width = "156px";
     clockItem.style.height = "auto";
+    clockWrapper.appendChild(clockItem);
 
     const clockCircle = document.createElement("div");
     clockCircle.style.width = "156px";
@@ -166,27 +167,31 @@ class WorldClock {
     clockCircle.style.borderRadius = "50%";
     clockCircle.style.backgroundColor = "#D9D9D9";
     clockCircle.style.marginBottom = "24px";
+    clockItem.appendChild(clockCircle)
 
     const btnBlock = document.createElement("div");
     btnBlock.style.width = "100%";
     btnBlock.style.display = "flex";
     btnBlock.style.justifyContent = "space between";
-
+    clockItem.appendChild(btnBlock)
+    
     const btn1 = document.createElement("button");
     btn1.style.width = '35px';
     btn1.style.height = '26px';
     btn1.style.color = '#A9FB58';
-    
+    btnBlock.appendChild(btn1);
+
     const btn2 = document.createElement("button");
     btn2.style.width = '35px';
     btn2.style.height = '26px';
     btn2.style.color = '#000AFF';
+    btnBlock.appendChild(btn2);
 
     const btn3 = document.createElement("button");
     btn3.style.width = '35px';
     btn3.style.height = '26px';
     btn3.style.color = '#FE0303';
-
+    btnBlock.appendChild(btn3);
   }
 
   getCurrentDate() {
@@ -207,3 +212,4 @@ class WorldClock {
 // Приклад виклику функції для часового поясу "Europe/Kiev"
 const Kiyv = new WorldClock("Europe/Kiev");
 Kiyv.getCurrentDate();
+Kiyv.createClock();
