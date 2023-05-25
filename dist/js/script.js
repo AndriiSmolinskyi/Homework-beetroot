@@ -173,13 +173,20 @@ class WorldClock {
     btnBlock.style.justifyContent = "space between";
 
     const btn1 = document.createElement("button");
-    btn1.classList.add("btnClockItem");
-
+    btn1.style.width = '35px';
+    btn1.style.height = '26px';
+    btn1.style.color = '#A9FB58';
+    
     const btn2 = document.createElement("button");
-    btn2.classList.add("btnClockItem");
+    btn2.style.width = '35px';
+    btn2.style.height = '26px';
+    btn2.style.color = '#000AFF';
 
     const btn3 = document.createElement("button");
-    btn2.classList.add("btnClockItem");
+    btn3.style.width = '35px';
+    btn3.style.height = '26px';
+    btn3.style.color = '#FE0303';
+
   }
 
   getCurrentDate() {

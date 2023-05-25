@@ -3,3 +3,18 @@
 @import "./mixins";
 @import "./responsive";
 
+
+.clock-block{
+   width: 100%;
+   padding-top: 50px;
+   display: flex;
+   justify-content: center;
+}
+
+.clock-wrapper{
+   width: 100%;
+   padding-top: 50px;
+   display: flex;
+   justify-content: space-between;
+   
+}
